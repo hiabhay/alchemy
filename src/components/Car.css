@@ -1,0 +1,19 @@
+/* Custom styling for the previous button */
+.alice-carousel__prev-btn {
+    position: absolute;
+    scale: 200%;
+    width: 50px;
+    height: 50px;
+    left: 85%;
+    top: 97%;
+  }
+  
+  /* Custom styling for the next button */
+  .alice-carousel__next-btn {
+    position: absolute;
+    scale: 200%;
+    width: 50px;
+    height: 50px;
+    left: 92%;
+    top: 97%;
+  }
