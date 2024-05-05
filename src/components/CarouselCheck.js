@@ -10,8 +10,8 @@ import rightArrow from "../assets/images/rightArrow.png";
 const CarouselCheck = () => {
   return (
     <Section>
-      <div className="relative w-[1100px] h-[400px] mb-48 mx-auto sm:max-w-full sm:hidden">
-        <div className="mt-12 sm:ml-[2%]">
+      <div className="relative w-[1100px] h-[400px] mb-48 mx-auto sm:w-auto sm:-mb-[110%] sm:ml-[8%]">
+        <div className="mt-12 sm:ml-[-1%]">
           <div className="relative font-bold text-indigo-600 z-20 text-2xl">
             Industries
           </div>
@@ -23,9 +23,9 @@ const CarouselCheck = () => {
           </div>
         </div>
         {/* Blur effect at the beginning of the carousel */}
-        <div className="absolute inset-y-0 left-[-2%] h-[460px] top-[20%] w-40 bg-gradient-to-r from-white to-transparent blur-[10px] z-10"></div>
+        <div className="absolute inset-y-0 left-[-2%] h-[460px] top-[20%] w-40 bg-gradient-to-r from-white to-transparent blur-[10px] z-10 sm:hidden"></div>
         {/* Blur effect at the end of the carousel */}
-        <div className="absolute inset-y-0 right-0 w-40 h-[460px] bg-gradient-to-l from-white to-transparent blur-[10px] z-10"></div>
+        <div className="absolute inset-y-0 right-0 w-40 h-[460px] bg-gradient-to-l from-white to-transparent blur-[10px] z-10 sm:hidden"></div>
         <AliceCarousel
           autoPlay
           mouseTracking
@@ -34,7 +34,7 @@ const CarouselCheck = () => {
           disableDotsControls={true}
           items={[
             
-            <div className="relative w-[220px] h-[260px] bg-white cursor-pointer bottom-[15%] group">
+            <div className="relative w-[220px] h-[260px] bg-white cursor-pointer bottom-[15%] group sm:mt-6">
               <div className="flex">
                 <div className="absolute text-indigo-600 font-semibold group-hover:font-bold text-3xl top-[83%] transition-all">
                   Real Estate
@@ -50,7 +50,7 @@ const CarouselCheck = () => {
                 and sales with our sophisticated solutions
               </div>
             </div>,
-            <div className="relative w-[220px] h-[200px] cursor-pointer mt-[94%] right-[2%] group">
+            <div className="relative w-[220px] h-[200px] cursor-pointer mt-[94%] right-[2%] group sm:ml-2 sm:mt-[6%]">
               <div>
                 <div className="absolute text-indigo-600 font-semibold text-3xl top-[3%] group-hover:font-bold transition-all">
                   Services
@@ -82,7 +82,7 @@ const CarouselCheck = () => {
                 and revolutionize.
               </div>
             </div>,
-            <div className="relative w-[270px] h-[250px] cursor-pointer mt-[92%] right-[8%] group">
+            <div className="relative w-[270px] h-[250px] cursor-pointer mt-[92%] right-[8%] group sm:ml-8 sm:mt-[4%]">
               <div>
                 <div className="absolute text-indigo-600 font-semibold text-3xl top-[3%] group-hover:font-bold transition-all">
                   eCommerce
@@ -114,7 +114,7 @@ const CarouselCheck = () => {
                 personalized workouts, tracking progress
               </div>
             </div>,
-            <div className="relative w-[270px] h-[250px] cursor-pointer mt-[92%] right-[8%] group">
+            <div className="relative w-[270px] h-[250px] cursor-pointer mt-[92%] right-[8%] group sm:ml-8 sm:mt-[4%]">
               <div>
                 <div className="absolute text-indigo-600 font-semibold text-3xl top-[3%] group-hover:font-bold transition-all">
                   eCommerce
@@ -134,18 +134,18 @@ const CarouselCheck = () => {
           ]}
           responsive={{
             0: { items: 1 },
-            600: { items: 3 },
+            600: { items: 1 },
             1024: { items: 5 },
           }}
         />
         <div
-          className="absolute w-[40px] h-[40px] rounded-full bg-indigo-600 left-[86.5%] top-[138%] z-20"
+          className="absolute w-[40px] h-[40px] rounded-full bg-indigo-600 left-[86.5%] top-[138%] z-30 sm:top-[101%] sm:left-[36%]"
           style={{ pointerEvents: "none" }}
         >
           <img src={leftArrow} className="w-4 h-auto mt-4 ml-3" />
         </div>
         <div
-          className="absolute w-[40px] h-[40px] rounded-full bg-indigo-600 left-[90.5%] top-[138%] z-20"
+          className="absolute w-[40px] h-[40px] rounded-full bg-indigo-600 left-[90.5%] top-[138%] z-30 sm:top-[101%] sm:left-[49%] "
           style={{ pointerEvents: "none" }}
         >
           <img src={rightArrow} className="w-4 h-auto mt-4 ml-3" />

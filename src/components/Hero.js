@@ -17,14 +17,14 @@ const Hero = () => {
         <div data-aos="fade-up">
            
         <div className="max-w-full sm:w-auto">
-            <div className="flex pl-16 sm:pl-4 pt-12">
-              <div className="text-indigo-600 text-7xl sm:text-5xl font-semibold leading-[83.60px] tracking-tight">
+            <div className="flex pl-16 sm:pl-4 pt-12 sm:pt-6">
+              <div className="text-indigo-600 text-7xl sm:text-[45px] font-semibold leading-[83.60px] tracking-tight">
                 Crafting
               </div>
-              <div className="text-neutral-300 text-7xl sm:text-5xl font-semibold leading-[83.60px] tracking-tight pl-4 sm:pl-2">
+              <div className="text-neutral-300 text-7xl sm:text-[45px] font-semibold leading-[83.60px] tracking-tight pl-4 sm:pl-2">
                 Stories
               </div>
-              <div className="text-neutral-300 text-7xl sm:text-5xl font-semibold leading-[83.60px] tracking-tight pl-4 sm:pl-2">
+              <div className="text-neutral-300 text-7xl sm:text-[45px] font-semibold leading-[83.60px] tracking-tight pl-4 sm:pl-2">
                 &
               </div>
             </div>
@@ -32,16 +32,16 @@ const Hero = () => {
               <div className="text-neutral-300 text-7xl sm:hidden font-semibold leading-[83.60px] tracking-tight">
                 &
               </div>
-              <div className="text-indigo-600 text-7xl sm:text-5xl sm:pt-2 sm:pl-0 font-semibold leading-[83.60px] tracking-tight pl-4">
+              <div className="text-indigo-600 text-7xl sm:text-[45px] sm:leading-10 sm:pl-0 font-semibold leading-[83.60px] tracking-tight pl-4">
                 User Friendly
               </div>
             </div>
-            <div className="text-neutral-300 text-7xl sm:text-5xl sm:pt-2 font-semibold leading-[83.60px] tracking-tight pl-16 sm:pl-4">
+            <div className="text-neutral-300 text-7xl sm:text-[45px] sm:leading-[68px] sm:pt-2 font-semibold leading-[83.60px] tracking-tight pl-16 sm:pl-4">
               Solutions
             </div>
           </div>
 
-          <div className="pl-16 pt-12 sm:pl-6">
+          <div className="pl-16 pt-12 sm:pl-6 sm:pt-6">
 
             <button class="group relative inline-flex items-center justify-center overflow-hidden border-2 border-black p-4 px-6 py-[7px] font-medium text-indigo-600 shadow-md transition duration-300 ease-out hover:border-1 rounded-full">
               <span class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-white text-white duration-300 group-hover:translate-x-0">
@@ -68,7 +68,7 @@ const Hero = () => {
 
             <br className="lg:hidden md:hidden xl:hidden 2xl:hidden"></br>
 
-            <button className="group border border-gray-700 rounded-[51px] ml-6 hover:shadow-lg hover:shadow-gray-300 sm:ml-0 sm:mt-4">
+            <button className="group border border-gray-700 rounded-[51px] ml-6 hover:shadow-lg hover:shadow-gray-300 sm:ml-0 sm:mt-6">
               <div className="group w-[144px] sm:w-[132px] h-10 justify-center items-center gap-2.5 inline-flex">
                 <div className="text-black text-base tracking-tight pb-[2px] flex font-medium">
                   See Plans

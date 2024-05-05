@@ -4,6 +4,7 @@ import PurpleBall from "../assets/images/PurpleBall.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import FeedbackCarousel from "./Carousels/FeedbackCarousel";
+import StaticTests from "./StaticTests";
 
 const Feedback = () => {
   useEffect(() => {
@@ -12,7 +13,7 @@ const Feedback = () => {
   return (
     <Section>
       <div className="flex pb-24">
-        <div className="pl-8 w-96 h-96 mb-20" data-aos="fade-up">
+        <div className="pl-8 w-96 h-96 mb-20 sm:hidden" data-aos="fade-up">
           <div className="relative">
             <iframe
               className="h-[250px] w-[480px] z-10 relative left-16 top-20 rounded-xl sm:hidden"
@@ -31,8 +32,11 @@ const Feedback = () => {
             ></img>
           </div>
         </div>
-        <div className="ml-[20%] sm:ml-0 sm:hidden">
+        <div className="ml-[20%] sm:hidden md:hidden">
           <FeedbackCarousel />
+        </div>
+        <div className="lg:hidden xl:hidden 2xl:hidden mx-auto">
+          <StaticTests/>
         </div>
       </div>
     </Section>

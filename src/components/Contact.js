@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <Section>
       <div className="flex relative">
-        <div className="h-[650px] sm:invisible" aoo="fade-right">
+        <div className="h-[650px] sm:invisible" data-aos="fade-right">
           <div className="relative sm:hidden">
             <div className="absolute z-0 flex">
               <img className="h-[500px] pt-20" src={Ellipse39}></img>

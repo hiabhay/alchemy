@@ -181,7 +181,7 @@ const ExperienceCarousel = ({ currIndex, setCurrIndex, onOptionChosen }) => {
 
   return (
     <div
-      className="text-black bg-white w-[200px] h-[390px] top-20 ml-32 sm:ml-0"
+      className="text-black bg-white w-[200px] h-[390px] top-20 ml-32 sm:-ml-2"
       data-aos="fade-up"
     >
       <div>

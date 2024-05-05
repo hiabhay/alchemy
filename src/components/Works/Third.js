@@ -14,7 +14,7 @@ const Third = () => {
           src={thirdWork}
           className="max-w-full h-[350px] sm:w-[350px] overflow-hidden sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
         />
-        <div className="flex">
+        <div className="flex sm:-ml-6">
           <div className="w-8 h-[2.5px] sm:w-6 sm:ml-8 bg-zinc-500 rounded-2xl mt-8" />
           <div>
             <div className="text-zinc-500 text-xl font-medium leading-[30px] tracking-tight mt-4 ml-2">

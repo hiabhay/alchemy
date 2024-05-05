@@ -18,7 +18,7 @@ const First = () => {
           />
         <div className="flex sm:-ml-6">
           <div>
-            <div className="w-8 sm:w-6 sm:ml-8 h-[2.5px] bg-zinc-500 rounded-2xl mt-8" />
+            <div className="w-8 sm:ml-8 sm:w-6 h-[2.5px] bg-zinc-500 rounded-2xl mt-8" />
           </div>
 
           <div>

@@ -18,14 +18,12 @@ export default function Home() {
       <IntroVideo />
       <Experience />
       <Work />
-      {/* <OurDomain /> */}
       <CarouselCheck/>
       <Clients />
       <Feedback />
       <Faqs />
       <Contact />
       <Footer />
-      {/* <CarouselCheck/> */}
     </div>
   );
 }

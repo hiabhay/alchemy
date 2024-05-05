@@ -17,3 +17,19 @@
     left: 92%;
     top: 97%;
   }
+
+  /* Custom styling for small devices */
+@media only screen and (max-width: 600px) {
+  .alice-carousel__prev-btn {
+    left: 28%;
+    top: 103%;
+    scale: 220%;
+    z-index: 20;
+  }
+  .alice-carousel__next-btn {
+    left: 53%;
+    top: 103%;
+    scale: 220%;
+    z-index: 20;
+  }
+}

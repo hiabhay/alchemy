@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden xl:hidden 2xl:hidden ml-2 ${isOpen ? "block" : "hidden"} -mb-12 mt-2`}>
+      <div className={`md:hidden xl:hidden 2xl:hidden ml-2 ${isOpen ? "block" : "hidden"} -mb-6 mt-2`}>
         <Link to="/" className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200" onClick={toggleMenu}>
           Services
         </Link>
