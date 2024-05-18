@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Ellipse from "../../assets/images/Ellipse.png";
+import Aditya from '../../assets/images/Aditya.png'
+import Shivani from '../../assets/images/Shivani.png'
 import rightArrowWhite from "../../assets/images/rightArrowWhite.png";
 import {
   CarouselProvider,
@@ -56,7 +57,7 @@ const HeroCarousel = () => {
               part is you complete the work within the given timeline
             </div>
             <div className="flex pt-6">
-              <img className="h-max w-max" src={Ellipse} alt="Ellipse"></img>
+              <img className="w-[50px] h-[50px]" src={Shivani} alt="Ellipse"></img>
               <div className="pl-4">
                 <div className="font-bold">Shvani Poddar</div>
                 <div className="text-opacity-25">ceo Crystal Matfoa</div>
@@ -71,7 +72,7 @@ const HeroCarousel = () => {
               perspective to our projects.
             </div>
             <div className="flex pt-2">
-              <img className="h-max w-max" src={Ellipse} alt="Ellipse"></img>
+              <img className="w-[50px] h-[50px]" src={Aditya} alt="Ellipse"></img>
               <div className="pl-4">
                 <div className="font-bold">Aditya Gautam</div>
                 <div className="text-opacity-25">Founder Turf</div>

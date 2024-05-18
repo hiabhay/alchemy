@@ -11,11 +11,14 @@ const First = () => {
   return (
     <div>
       <div className="pt-10" data-aos="fade-up" data-aos-duration="800">
+        <a href="https://crystalfasteners.com/" target="blank">
           <img
             src={firstWork}
             className="max-w-full sm:w-[350px] sm:mx-auto h-[700px] sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{ cursor: `url(${CustomCursor}), auto` }}
           />
+        </a>
+
         <div className="flex sm:-ml-6">
           <div>
             <div className="w-8 sm:ml-8 sm:w-6 h-[2.5px] bg-zinc-500 rounded-2xl mt-8" />

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import fifthWork from "../../assets/images/fifthWork.png";
+import Clarity from "../../assets/images/Clarity.png";
 import Section from "../Section";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,10 +17,13 @@ const Fifth = () => {
         data-aos-delay="200"
         data-aos-duration="800"
       >
-        <img
-          src={fifthWork}
-          className="max-w-full sm:w-[350px] sm:h-auto sm:mx-auto h-[700px] hover:scale-105 transition-transform duration-300 ease-in-out"
-        />
+        <a href="https://www.instagram.com/clarity.water/" target="blank">
+          <img
+            src={Clarity}
+            className="max-w-full sm:w-[350px] w-[450px] sm:h-auto sm:mx-auto h-[550px] hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </a>
+
         <div className="flex sm:-ml-6">
           <div className="w-8 h-[2.5px] sm:w-6 sm:ml-8 bg-zinc-500 rounded-2xl mt-8" />
           <div>
