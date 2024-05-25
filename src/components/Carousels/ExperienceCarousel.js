@@ -186,7 +186,7 @@ const ExperienceCarousel = ({ currIndex, setCurrIndex, onOptionChosen }) => {
     >
       <div>
         <div>
-          {["UX Design", "UI Design", "Web Development", "Branding"].map(
+          {["UX Design", "UI Design", "Web Development", "Social Media & Branding"].map(
             (text, index) => (
               <div className="flex">
                 <div className="mt-2" key={index}>
@@ -200,7 +200,7 @@ const ExperienceCarousel = ({ currIndex, setCurrIndex, onOptionChosen }) => {
                       }`}
                     />
                     <div
-                      className={`text-black font-xl ${
+                      className={`text-black font-xl text-left w-[250px] sm:w-[220px] ${
                         currIndex === index ? "font-bold" : "text-opacity-40"
                       }`}
                     >

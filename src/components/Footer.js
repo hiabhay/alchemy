@@ -4,6 +4,7 @@ import Ellipse23 from "../assets/images/Ellipse23.png";
 import Ellipse24 from "../assets/images/Ellipse24.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "gatsby";
 
 const Footer = () => {
   useEffect(() => {
@@ -18,7 +19,12 @@ const Footer = () => {
               Let’s Talk
             </div>
             <div className="text-white text-2xl font-normal leading-9 tracking-tight">
-            <a href="mailto:hello@alchemydesign.xyz" className="sm:text-indigo-600">hello@alchemydesign.xyz</a>
+              <a
+                href="mailto:hello@alchemydesign.xyz"
+                className="sm:text-indigo-600"
+              >
+                hello@alchemydesign.xyz
+              </a>
             </div>
             <div className="mt-2 w-[296px] h-[0px] border border-gray-700"></div>
             <div className="text-white text-md font-normal mt-8 sm:mt-6 leading-[20px] tracking-tight sm:text-zinc-400">
@@ -32,16 +38,32 @@ const Footer = () => {
                 Socials
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6">
-                Dribble
+                <Link href="https://dribbble.com/alchemy_global" target="_blank">
+                  Dribble
+                </Link>
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                LinkedIn
+                <Link
+                  href="https://www.linkedin.com/company/alchemydesigns/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </Link>
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Instagram
+                <Link
+                  href="https://www.instagram.com/alchemy_globaldesign?igsh=MWhpNmIyb2N1ajg2bQ=="
+                  target="_blank"
+                >
+                  Instagram
+                </Link>
               </div>
             </div>
-            <div className="pl-28 sm:pl-[17%]" data-aos="fade-up" data-aos-duration="1200">
+            <div
+              className="pl-28 sm:pl-[17%]"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="text-white text-xl sm:text-md font-bold leading-[30px] tracking-tight">
                 Site
               </div>
@@ -49,24 +71,31 @@ const Footer = () => {
                 Work
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Services
+                Plans
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
                 Process
               </div>
+              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
+                Contact
+              </div>
             </div>
-            <div className="pl-28 sm:pl-[19%]" data-aos="fade-up" data-aos-duration="1400">
+            <div
+              className="pl-28 sm:pl-[19%]"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
               <div className="text-white text-xl sm:text-md font-bold leading-[30px] tracking-tight">
                 Other
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6">
-                Privacy
+                Career
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Terms
+                Services
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Sitemap
+                Home
               </div>
             </div>
           </div>

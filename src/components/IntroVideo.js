@@ -7,22 +7,21 @@ const IntroVideo = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <Section>
       <div
-        className="pl-[5%] sm:pl-0 sm:w-auto mx-auto sm:mt-8"
+        className="pl-[5%] sm:ml-1 sm:mr-1 sm:w-auto mx-auto sm:mt-8 relative w-[1100px]"
         data-aos="fade-up"
+        style={{ paddingTop: '56.25%' }}
       >
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/nPNo28_MwU0?si=1IjDL82y4XjD5rey"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          className="hover:scale-110 transition-transform duration-700 ease-in-out w-[1130px] h-[450px] sm:w-[350px] sm:mx-auto sm:h-[200px]"
+        <iframe 
+        className="hover:scale-105 transition-all"
+          src="https://player.vimeo.com/video/949262640?badge=0&autopause=0&player_id=0&app_id=58479" 
+          frameBorder="0" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+          title="Alchemy Showreel"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
         ></iframe>
       </div>
     </Section>

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import firstWork from "../../assets/images/firstWork.png";
-import CustomCursor from "./CustomCursor";
 
 const First = () => {
   useEffect(() => {
@@ -15,7 +14,6 @@ const First = () => {
           <img
             src={firstWork}
             className="max-w-full sm:w-[350px] sm:mx-auto h-[700px] sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
-            style={{ cursor: `url(${CustomCursor}), auto` }}
           />
         </a>
 

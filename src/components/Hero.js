@@ -10,7 +10,19 @@ import { Link } from "gatsby";
 const Hero = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
+
+    // Dynamically load the Clutch widget script
+    const script = document.createElement("script");
+    script.src = "https://widget.clutch.co/static/js/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up the script when the component unmounts
+      document.body.removeChild(script);
+    };
   }, []);
+
   return (
     <Section>
       <Navbar />
@@ -43,27 +55,27 @@ const Hero = () => {
 
           <div className="pl-16 pt-12 sm:pl-6 sm:pt-6">
             <Link to="/work">
-              <button class="group relative inline-flex items-center justify-center overflow-hidden border-2 border-black p-4 px-6 py-[7px] font-medium text-indigo-600 shadow-md transition duration-300 ease-out hover:border-1 rounded-full">
-                <span class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-white text-white duration-300 group-hover:translate-x-0">
+              <button className="group relative inline-flex items-center justify-center overflow-hidden border-2 border-black p-4 px-6 py-[7px] font-medium text-indigo-600 shadow-md transition duration-300 ease-out hover:border-1 rounded-full">
+                <span className="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-white text-white duration-300 group-hover:translate-x-0">
                   <svg
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     stroke="black"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     ></path>
                   </svg>
                 </span>
-                <span class="ease absolute flex h-full w-full transform items-center justify-center text-white bg-black transition-all duration-300 group-hover:translate-x-full">
+                <span className="ease absolute flex h-full w-full transform items-center justify-center text-white bg-black transition-all duration-300 group-hover:translate-x-full">
                   See our work
                 </span>
-                <span class="invisible relative">Button Text</span>
+                <span className="invisible relative">Button Text</span>
               </button>
             </Link>
 
@@ -88,6 +100,16 @@ const Hero = () => {
           <HeroCarousel />
         </div>
       </div>
+      <div
+          className="clutch-widget ml-16 -mt-6 sm:hidden"
+          data-url="https://widget.clutch.co"
+          data-widget-type="14"
+          data-height="50"
+          data-nofollow="true"
+          // data-expandifr="true"
+          data-scale="50"
+          data-clutchcompany-id="2354015"
+        ></div>
     </Section>
   );
 };

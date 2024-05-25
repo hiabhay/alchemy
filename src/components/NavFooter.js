@@ -51,9 +51,24 @@ const NavFooter = () => {
             <div className="text-white text-sm mt-4">Process</div>
           </div>
           <div className="ml-16">
-            <div className="text-white text-sm">Dribble</div>
-            <div className="text-white text-sm mt-4">Instagram</div>
-            <div className="text-white text-sm mt-4">Twitter</div>
+            <div className="text-white text-sm">
+              <Link href="https://dribbble.com/alchemy_global" target="_blank">
+                Dribble
+              </Link>
+            </div>
+            <div className="text-white text-sm mt-4">
+              <Link
+                href="https://www.linkedin.com/company/alchemydesigns/"
+                target="_blank"
+              >
+                LinkedIn
+              </Link>
+            </div>
+            <div className="text-white text-sm mt-4">
+              <Link href="https://www.instagram.com/alchemy_globaldesign?igsh=MWhpNmIyb2N1ajg2bQ==" target="_blank">
+                Instagram
+              </Link>
+            </div>
           </div>
         </div>
       </div>

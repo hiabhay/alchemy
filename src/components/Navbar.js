@@ -62,7 +62,7 @@ const Navbar = () => {
               data-aos="zoom-in-up"
               data-aos-duration="700"
             >
-              Pricing
+              Plans
             </div>
           </Link>
           <Link to="/" className="mr-6">
@@ -102,13 +102,6 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } -mb-6 mt-2`}
       >
-        {/* <Link
-          to="/"
-          className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
-          onClick={toggleMenu}
-        >
-          Services
-        </Link> */}
         <Link
           to="/"
           className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
@@ -123,13 +116,20 @@ const Navbar = () => {
         >
           Process
         </Link>
-        {/* <Link
+        <Link
           to="/"
           className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
           onClick={toggleMenu}
         >
           Plans
-        </Link> */}
+        </Link>
+        <Link
+          to="/"
+          className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
+          onClick={toggleMenu}
+        >
+          Blogs
+        </Link>
       </div>
     </Section>
   );
