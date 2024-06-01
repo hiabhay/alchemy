@@ -3,7 +3,6 @@ import Section from "../components/Section";
 import Check from "../assets/images/Check-circle.png";
 import moneyIcon from "../assets/images/moneyIcon.png";
 import sendMail from "../assets/images/sendMail.png";
-import Link from "gatsby";
 
 const PricingPlans = () => {
   const handleGetInTouchClick = () => {

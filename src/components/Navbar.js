@@ -20,9 +20,9 @@ const Navbar = ({source}) => {
   // Normalize pathname to remove trailing slashes
   const normalizePath = (path) => path.replace(/\/$/, "");
 
-  useEffect(() => {
-    console.log("Current path:", location.pathname);
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   console.log("Current path:", location.pathname);
+  // }, [location.pathname]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

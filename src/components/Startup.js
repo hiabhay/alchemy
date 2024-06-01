@@ -5,20 +5,20 @@ const Startup = () => {
   return (
     <Section>
       <div className="relative mt-28">
-        <div className="relative left-12 w-[80%]">
-          <div className="w-[700px] font-bold text-3xl text-black">
-            Launch your<span className="text-indigo-600"> MVP</span> in the
+        <div className="relative left-12 sm:left-4 w-[80%] sm:w-auto sm:mr-6">
+          <div className="w-[700px] sm:w-auto font-bold text-3xl text-black">
+            Launch your <br className="hidden sm:block"></br><span className="text-indigo-600"> MVP</span> in the
             market
           </div>
-          <div className="w-[80%] mt-6 text-neutral-400 font-light leading-[30px] tracking-tight">
+          <div className="w-[80%] sm:w-auto sm:mr-6 mt-6 text-neutral-400 font-light leading-[30px] tracking-tight">
             The below steps ensure high-quality products with high-end
             engineered development. The envisioned design is transformed into
             reality with easy accessible features and design essentials.
           </div>
         </div>
         <div className="mt-16">
-          <div className="flex">
-            <div className="relative left-12 w-[400px]">
+          <div className="flex sm:flex-col">
+            <div className="relative left-12 w-[400px] sm:left-4 sm:w-auto sm:mr-6">
               <div className="text-indigo-600 tracking-tight leading-normal font-light text-base">
                 UX Research
               </div>
@@ -31,7 +31,7 @@ const Startup = () => {
                 assists us in creating unique ideas.
               </div>
             </div>
-            <div className="relative mt-8 w-[500px] left-[20%] top-4">
+            <div className="relative mt-8 w-[500px] left-[20%] top-4 sm:left-4 sm:w-auto sm:mr-6">
               <div className="font-semibold">Descry Atelier</div>
               <div className="text-neutral-400">
                 A workshop to gather information on the product and
@@ -47,9 +47,9 @@ const Startup = () => {
             </div>
           </div>
         </div>
-        <div className="mt-20">
-          <div className="flex">
-            <div className="relative left-12 w-[400px]">
+        <div className="mt-20 sm:bg-indigo-100 sm:pt-12 sm:pb-12">
+          <div className="flex sm:flex-col">
+            <div className="relative left-12 w-[400px] sm:left-4 sm:w-auto sm:mr-6">
               <div className="text-indigo-600 tracking-tight leading-normal font-light text-base">
                 Development
               </div>
@@ -62,7 +62,7 @@ const Startup = () => {
                 launched into the market.
               </div>
             </div>
-            <div className="relative mt-4 w-[500px] left-[20%] top-4">
+            <div className="relative mt-4 w-[500px] left-[20%] top-4 sm:left-4 sm:w-auto sm:mr-6">
               <div className="font-semibold">
                 Front-End Engineered Development
               </div>

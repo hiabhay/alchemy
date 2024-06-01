@@ -12,6 +12,9 @@ import VerifyIcon from "../assets/images/VerifyIcon.png";
 import NavFooter from "../components/NavFooter";
 import PricingPlans from "../components/PricingPlans";
 import Footer from "../components/Footer";
+import PCPlans from "../components/PCPlans";
+import MobilePlans from "../components/MobilePlans";
+import PricingMobile from "../components/PricingMobile";
 
 const Pricing = () => {
   const pricingRef = useRef(null);
@@ -27,11 +30,13 @@ const Pricing = () => {
         <div className="relative">
           {/* Hero */}
           <div>
-            <div className="text-center text-neutral-300 text-5xl font-semibold mt-24">
-              Design subscriptions suitable for everyone
+            <div className="text-center text-neutral-300 text-5xl sm:text-3xl font-semibold mt-24">
+              Design subscriptions<br className="hidden sm:block"></br> suitable
+              for everyone
             </div>
-            <div className="text-center text-indigo-600 text-5xl font-semibold mt-3">
+            <div className="text-center text-indigo-600 text-5xl sm:text-3xl font-semibold mt-3 sm:mt-0">
               Pause or cancel
+              <br className="hidden sm:block"></br>
               <span className="text-neutral-300"> whenever you like</span>
             </div>
 
@@ -39,7 +44,7 @@ const Pricing = () => {
               <div className="text-black text-base font-normal leading-tight tracking-tight mr-2">
                 Highly skilled designers
               </div>
-              <div className="w-[12px] h-[12px] bg-black rounded-full ml-2 mr-2">
+              <div className="w-[12px] h-[12px] bg-black rounded-full ml-2 mr-2 sm:ml-1 sm:mr-1">
                 <img
                   src={star}
                   className="w-[5px] h-auto mt-[3.4px] ml-[3.4px]"
@@ -49,14 +54,14 @@ const Pricing = () => {
               <div className="text-black text-base font-normal leading-tight tracking-tight mr-2 ml-2">
                 Endless Design Request
               </div>
-              <div className="w-[12px] h-[12px] bg-black rounded-full ml-2 mr-2">
+              <div className="w-[12px] h-[12px] bg-black rounded-full ml-2 mr-2 sm:hidden">
                 <img
                   src={star}
                   className="w-[5px] h-auto mt-[3.4px] ml-[3.4px]"
                 ></img>
               </div>
 
-              <div className="text-black text-base font-normal leading-tight tracking-tight ml-2">
+              <div className="text-black text-base font-normal leading-tight tracking-tight ml-2 sm:hidden">
                 All with one easy subscription
               </div>
             </div>
@@ -81,101 +86,43 @@ const Pricing = () => {
           {/* Member Benefits */}
           <div className="mt-20">
             <div className="text-center font-bold text-4xl">
-              Benefits of being a member
+              Benefits of being a<br className="hidden sm:block"></br> member
             </div>
             <div className="text-center mt-4 font-semibold">
-              Benefits so exceptional, you won't ever have to seek design
+              Benefits so exceptional, you won't
+              <br className="hidden sm:block"></br> ever have to seek design
               services elsewhere.
             </div>
-
-            <div className="flex justify-center mt-16">
-              <div className="flex justify-center mr-12">
-                <div className="flex flex-col items-center text-center">
-                  <img src={DeliveryIcon} className="w-[40px] h-auto" />
-                  <div className="font-bold mt-2">Fast delivery</div>
-                  <div className="text-gray-700 opacity-50 w-[210px] text-xs font-semibold mt-3">
-                    Lightning-Fast Design Delivery. Get your designs in record
-                    time
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-center ml-12 mr-12 -mt-1">
-                <div className="flex flex-col items-center text-center">
-                  <img src={Lock} className="w-[30px] h-auto" />
-                  <div className="font-bold mt-2">Fixed monthly rate</div>
-                  <div className="text-gray-700 opacity-50 w-[210px] text-xs font-semibold mt-3">
-                    Unlock Creativity on Demand with a Fixed Monthly Design
-                    Subscription
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-center ml-12">
-                <div className="flex flex-col items-center text-center">
-                  <img src={InfiniteIcon} className="w-[30px] h-auto" />
-                  <div className="font-bold mt-4">Unlimited designs</div>
-                  <div className="text-gray-700 opacity-50 w-[240px] text-xs font-semibold mt-3">
-                    Limitless Design Requests. Your Creative Desires, Our
-                    Endless Possibilities
-                  </div>
-                </div>
-              </div>
+            <div className="sm:hidden">
+              <PCPlans />
             </div>
-
-            <div className="flex justify-center mt-20">
-              <div className="flex justify-center mr-12">
-                <div className="flex flex-col items-center text-center">
-                  <img src={Calendar} className="w-[40px] h-auto" />
-                  <div className="font-bold mt-2">Pause or cancel anytime</div>
-                  <div className="text-gray-700 opacity-50 w-[240px] text-xs font-semibold mt-3">
-                    Total Flexibility: Pause or Cancel Anytime, No Strings
-                    Attached.
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-center ml-8 mr-12 mt-2">
-                <div className="flex flex-col items-center text-center">
-                  <img src={WorkIcon} className="w-[30px] h-auto" />
-                  <div className="font-bold mt-2">Minimal to no meetings</div>
-                  <div className="text-gray-700 opacity-50 w-[210px] text-xs font-semibold mt-3">
-                    Streamlined Communication: Minimal to No Calls Required
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-center ml-12">
-                <div className="flex flex-col items-center text-center">
-                  <img src={VerifyIcon} className="w-[30px] h-auto" />
-                  <div className="font-bold mt-4">Complete Ownership</div>
-                  <div className="text-gray-700 opacity-50 w-[240px] text-xs font-semibold mt-3">
-                    You have complete ownership of your design assets
-                  </div>
-                </div>
-              </div>
+            <div className="hidden sm:block">
+              <MobilePlans/>
             </div>
           </div>
 
           {/* Plans */}
-          <div className="mt-20"  ref={pricingRef}>
+          <div className="mt-20" ref={pricingRef}>
             <div className="text-center font-bold text-4xl">Plans we offer</div>
-            <div className="text-center mt-4 font-semibold">
-              Select the plan that best suits your needs from the most
+            <div className="text-center mt-4 font-semibold sm:w-auto">
+              Select the plan that best suits your needs<br className="hidden sm:block"></br> from the most
               transparent pricing
             </div>
           </div>
 
           {/* Brochure */}
 
-          <div>
+          <div className="sm:hidden">
             <PricingPlans />
+          </div>
+          <div className="hidden sm:block">
+            <PricingMobile/>
           </div>
         </div>
       </Section>
       {/* <NavFooter /> */}
-      
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };

@@ -23,25 +23,25 @@ const work = () => {
               Featured<span className="text-indigo-600"> Stories</span>
             </div>
           </div>
-          <div className="flex justify-center relative top-44">
-            <div className="mr-28">
+          <div className="flex justify-center relative top-44 sm:flex-col md:left-32">
+            <div className="mr-28 sm:mr-0 md:mr-0">
               <img
                 src={firstWork}
                 className="max-w-full sm:w-[350px] sm:mx-auto h-[700px] sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
-              <div className="font-bold text-lg mt-4">Crystal Fasteners</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] text-justify">
+              <div className="font-bold text-lg mt-4 sm:ml-6">Crystal Fasteners</div>
+              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
             </div>
-            <div className="ml-28">
+            <div className="ml-28 sm:ml-0 sm:mt-10">
               <img
                 src={secWork}
                 className="max-w-full h-[550px] sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               ></img>
-              <div className="font-bold text-lg mt-4">Turf</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] text-justify">
+              <div className="font-bold text-lg mt-4 sm:ml-6">Turf</div>
+              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
@@ -53,32 +53,32 @@ const work = () => {
                 src={thirdWork}
                 className="max-w-full h-[350px] sm:w-[350px] overflow-hidden sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
-              <div className="font-bold text-lg mt-4">Notch</div>
-              <div className="font-semibold text-lg mt-2 text-justify">
+              <div className="font-bold text-lg mt-4 sm:ml-6">Notch</div>
+              <div className="font-semibold text-lg mt-2 sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-24">
-            <div className="mr-28">
+          <div className="flex justify-center relative top-24 sm:flex-col sm:top-12">
+            <div className="mr-28 sm:mr-0">
               <img
                 src={fourthWork}
                 className="max-w-full h-[500px] sm:w-[350px] sm:h-auto sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
-              <div className="font-bold text-lg mt-4">Instaraise</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] text-justify">
+              <div className="font-bold text-lg mt-4 sm:ml-6">Instaraise</div>
+              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
             </div>
-            <div className="ml-28">
+            <div className="ml-28 sm:ml-0 sm:mt-12">
               <img
                 src={Clarity}
                 className="max-w-full sm:w-[350px] w-[450px] sm:h-auto sm:mx-auto h-[550px] hover:scale-105 transition-transform duration-300 ease-in-out"
               ></img>
-              <div className="font-bold text-lg mt-4">Huddle</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] text-justify">
+              <div className="font-bold text-lg mt-4 sm:ml-6">Huddle</div>
+              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>

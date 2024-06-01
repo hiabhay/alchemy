@@ -22,7 +22,7 @@ const Process = () => {
                 Process for
               </div>
               {/* Toggle button */}
-              <div className="mt-4 flex items-center absolute left-[43%]">
+              <div className="mt-4 flex items-center absolute left-[43%] sm:left-[25%]">
                 <button
                   onClick={toggle}
                   className="relative w-[205px] h-10 flex items-center bg-neutral-100 border-neutral-200 rounded-full p-1 cursor-pointer transition-colors border shadow-inner"
