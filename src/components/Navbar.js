@@ -1,21 +1,38 @@
 import React, { useEffect, useState } from "react";
 import Frame from "../assets/images/Frame.svg";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 import Section from "./Section";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import NavHam from "../assets/images/NavHam.png";
 
-const Navbar = () => {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
+const Navbar = ({source}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (source === "hero") {
+      Aos.init({ duration: 500 });
+    }
+  }, [source]);
+
+  // Normalize pathname to remove trailing slashes
+  const normalizePath = (path) => path.replace(/\/$/, "");
+
+  useEffect(() => {
+    console.log("Current path:", location.pathname);
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const navItems = [
+    { to: "/work", label: "Work" },
+    { to: "/process", label: "Process" },
+    { to: "/pricing", label: "Plans" },
+  ];
 
   return (
     <Section>
@@ -38,42 +55,48 @@ const Navbar = () => {
 
         {/* Navbar Menu */}
         <div className="sm:hidden items-center absolute left-[65%] flex">
-          <Link to="/work" className="mr-6">
+          {navItems.map((item, index) => (
+            <Link key={item.to} to={item.to} className="mr-6 relative">
+              <div
+                className={`text-sm tracking-tight font-semibold ${
+                  normalizePath(location.pathname) === normalizePath(item.to)
+                    ? "text-indigo-600 border-indigo-600"
+                    : "text-neutral-400"
+                }`}
+                data-aos={source === "hero" ? "zoom-in-up" : ""}
+                data-aos-duration={source === "hero" ? `${500 + index * 100}` : ""}
+                style={{
+                  position: 'relative',
+                  paddingBottom: '0.1rem'
+                }}
+              >
+                {item.label}
+                {normalizePath(location.pathname) === normalizePath(item.to) && (
+                  <span
+                    style={{
+                      content: '""',
+                      display: 'block',
+                      width: '70%',
+                      height: '1.7px',
+                      backgroundColor: '#4f46e5', // Use your desired color code
+                      position: 'absolute',
+                      bottom: '0',
+                      left: '3%', // Center the line
+                    }}
+                  />
+                )}
+              </div>
+            </Link>
+          ))}
+          <a href="https://medium.com/@hello_36790" target="_blank" rel="noopener noreferrer">
             <div
               className="text-neutral-400 text-sm font-medium tracking-tight"
-              data-aos="zoom-in-up"
-              data-aos-duration="500"
-            >
-              Work
-            </div>
-          </Link>
-          <Link to="/process" className="mr-6">
-            <div
-              className="text-neutral-400 text-sm font-medium tracking-tight"
-              data-aos="zoom-in-up"
-              data-aos-duration="600"
-            >
-              Process
-            </div>
-          </Link>
-          <Link to="/pricing" className="mr-6">
-            <div
-              className="text-neutral-400 text-sm font-medium tracking-tight"
-              data-aos="zoom-in-up"
-              data-aos-duration="700"
-            >
-              Plans
-            </div>
-          </Link>
-          <Link to="/" className="mr-6">
-            <div
-              className="text-neutral-400 text-sm font-medium tracking-tight"
-              data-aos="zoom-in-up"
+              data-aos={source === "hero" ? "zoom-in-up" : ""}
               data-aos-duration="800"
             >
               Blogs
             </div>
-          </Link>
+          </a>
 
           <button className="pt-0 ml-4">
             <div className="w-[120px] h-10 px-5 py-4 bg-indigo-600 rounded-[51px] shadow-md shadow-slate-400 justify-center items-center inline-flex hover:shadow-none">
@@ -89,10 +112,7 @@ const Navbar = () => {
           className="pt-0 ml-4 md:hidden xl:hidden 2xl:hidden"
           onClick={toggleMenu}
         >
-          {/* <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg> */}
-          <img src={NavHam}></img>
+          <img src={NavHam} alt="Menu" />
         </button>
       </div>
 
@@ -102,34 +122,25 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } -mb-6 mt-2`}
       >
-        <Link
-          to="/"
-          className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
-          onClick={toggleMenu}
-        >
-          Work
-        </Link>
-        <Link
-          to="/"
-          className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
-          onClick={toggleMenu}
-        >
-          Process
-        </Link>
-        <Link
-          to="/"
-          className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
-          onClick={toggleMenu}
-        >
-          Plans
-        </Link>
-        <Link
-          to="/"
+        {navItems.map((item) => (
+          <Link
+            key={item.to}
+            to={item.to}
+            className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
+            onClick={toggleMenu}
+          >
+            {item.label}
+          </Link>
+        ))}
+        <a
+          href="https://medium.com/@hello_36790"
+          target="_blank"
+          rel="noopener noreferrer"
           className="block py-2 px-4 text-sm text-neutral-400 font-medium border-b border-neutral-200"
           onClick={toggleMenu}
         >
           Blogs
-        </Link>
+        </a>
       </div>
     </Section>
   );

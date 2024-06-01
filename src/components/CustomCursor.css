@@ -1,0 +1,13 @@
+.custom-cursor {
+  position: fixed;
+  top: -100;
+  left: 0;
+  width: 120px; /* Adjust width as needed */
+  height:40px; /* Adjust height as needed */
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  pointer-events: none; /* Ensures the custom cursor does not interfere with mouse events */
+  z-index: 9999; /* Ensures the custom cursor appears above other elements */
+}

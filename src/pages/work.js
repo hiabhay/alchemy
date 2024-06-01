@@ -7,6 +7,7 @@ import thirdWork from "../assets/images/thirdWork.png";
 import fourthWork from "../assets/images/fourthWork.png";
 import Clarity from "../assets/images/Clarity.png";
 import NavFooter from "../components/NavFooter";
+import Footer from "../components/Footer";
 
 const work = () => {
   return (
@@ -85,7 +86,8 @@ const work = () => {
           </div>
         </div>
       </Section>
-      <NavFooter/>
+      {/* <NavFooter/> */}
+      <Footer />
     </div>
   );
 };

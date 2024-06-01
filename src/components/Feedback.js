@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import FeedbackCarousel from "./Carousels/FeedbackCarousel";
 import StaticTests from "./StaticTests";
+import graphicArt from "../assets/images/graphicArt.png";
 
 const Feedback = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const Feedback = () => {
       <div className="flex pb-24">
         <div className="pl-8 w-96 h-96 mb-20 sm:hidden" data-aos="fade-up">
           <div className="relative">
-            <iframe
+            {/* <iframe
               className="h-[250px] w-[480px] z-10 relative left-16 top-20 rounded-xl sm:hidden"
               width="560"
               height="315"
@@ -24,11 +25,17 @@ const Feedback = () => {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-            ></iframe>
-            <img src={PurpleBall} className="absolute -left-5 -top-5 z-0 sm:hidden"></img>
+            ></iframe> */}
+            <div className="relative bottom-24 w-[550px] right-8">
+              <img src={graphicArt}></img>
+            </div>
             <img
               src={PurpleBall}
-              className="absolute left-96 top-[220px] z-0 sm:hidden"
+              className="absolute top-20 z-0 sm:hidden w-[200px]"
+            ></img>
+            <img
+              src={PurpleBall}
+              className="absolute left-[110%] top-44 z-0 sm:hidden w-[150px]"
             ></img>
           </div>
         </div>
@@ -36,7 +43,7 @@ const Feedback = () => {
           <FeedbackCarousel />
         </div>
         <div className="lg:hidden xl:hidden 2xl:hidden mx-auto">
-          <StaticTests/>
+          <StaticTests />
         </div>
       </div>
     </Section>

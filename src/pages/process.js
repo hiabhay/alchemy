@@ -3,7 +3,8 @@ import Section from "../components/Section";
 import Navbar from "../components/Navbar";
 import Enterprise from "../components/Enterprise";
 import Startup from "../components/Startup";
-import NavFooter from '../components/NavFooter'
+import NavFooter from "../components/NavFooter";
+import Footer from "../components/Footer";
 
 const Process = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -55,7 +56,8 @@ const Process = () => {
           {isToggled ? <Startup /> : <Enterprise />}
         </div>
       </Section>
-      <NavFooter/>
+      {/* <NavFooter/> */}
+      <Footer />
     </div>
   );
 };

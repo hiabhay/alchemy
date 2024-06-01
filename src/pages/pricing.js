@@ -11,6 +11,7 @@ import WorkIcon from "../assets/images/WorkIcon.png";
 import VerifyIcon from "../assets/images/VerifyIcon.png";
 import NavFooter from "../components/NavFooter";
 import PricingPlans from "../components/PricingPlans";
+import Footer from "../components/Footer";
 
 const Pricing = () => {
   const pricingRef = useRef(null);
@@ -172,7 +173,9 @@ const Pricing = () => {
           </div>
         </div>
       </Section>
-      <NavFooter />
+      {/* <NavFooter /> */}
+      
+      <Footer/>
     </div>
   );
 };
