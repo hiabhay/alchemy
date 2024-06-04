@@ -91,7 +91,7 @@ const work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-44 sm:flex-col md:left-32">
+          <div className="flex justify-center relative top-44 sm:flex-col mr-24 sm:mr-0">
             <div className="mr-28 sm:mr-0 md:mr-0">
               <img
                 src={kalcowork}
@@ -113,30 +113,30 @@ const work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-44 sm:flex-col md:left-32">
-            <div className="mr-4 sm:mr-0 md:mr-0">
+          <div className="flex justify-center relative top-48 sm:flex-col">
+            <div className="sm:mr-0 mr-8 overflow-hidden">
               <img
                 src={petitfeework}
-                className="max-w-full sm:w-[350px] sm:mx-auto h-[700px] sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="w-[500px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out overflow-hidden mr-44"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Petitfee | Branding | Social media posts</div>
               <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               Petitfee brings you your non negotiable skin care routine. The products are made in a way that it is super easy to use and can be inculcated in your daily routine
               </div>
             </div>
-            <div className="sm:ml-0 sm:mt-10">
+            <div className="sm:ml-0 sm:mt-10 sm:w-auto">
               <img
                 src={wemeetup}
-                className="max-w-full h-[550px] sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="w-[400px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out mr-4 overflow-hidden -ml-16"
               ></img>
-              <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Web3 Meetup | UX</div>
-              <div className="font-semibold text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6 -ml-16">Web3 Meetup | UX</div>
+              <div className="font-semibold text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify -ml-16">
               Where India’s web 3 meetup community talks
               </div>
             </div>
           </div>
           <div className="flex justify-center relative top-60 sm:flex-col md:left-32">
-            <div className="mr-4 sm:mr-0 md:mr-0">
+            <div className="mr-32 sm:mr-0">
               <img
                 src={beyondorganicwork}
                 className="w-[400px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out"
@@ -146,14 +146,14 @@ const work = () => {
               Organic grown products from farm to your table.
               </div>
             </div>
-            <div className="ml-24 sm:ml-0 sm:mt-10 w-[400px] h-[600px] overflow-hidden">
+            <div className="ml-16 sm:ml-0 sm:mt-10 w-[400px] sm:w-auto h-[600px] overflow-hidden">
               <img
                 src={crystalmatfoamwork}
-                className="max-w-full h-auto sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out overflow-hidden sm:ml-[30%]"
+                className="max-w-full h-auto sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out sm:ml-[27%] overflow-hidden"
               ></img>
-              <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Web3 Meetup | UX</div>
+              <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Crystal Mattress | Branding | Social Media Posts</div>
               <div className="font-semibold text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
-              Where India’s web 3 meetup community talks
+              Premium mattress manufacturers applauded for its ergonomical designs
               </div>
             </div>
           </div>
