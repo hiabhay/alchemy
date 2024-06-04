@@ -38,7 +38,7 @@ const work = () => {
                 className="max-w-full sm:w-[350px] sm:mx-auto h-[700px] sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6">Crystal Fasteners</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
@@ -49,7 +49,7 @@ const work = () => {
                 className="max-w-full h-[550px] sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               ></img>
               <div className="font-bold text-lg mt-4 sm:ml-6">Turf</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
@@ -62,7 +62,7 @@ const work = () => {
                 className="max-w-full h-[350px] sm:w-[350px] overflow-hidden sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6">Notch</div>
-              <div className="font-semibold text-lg mt-2 sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
@@ -75,7 +75,7 @@ const work = () => {
                 className="max-w-full h-[500px] sm:w-[350px] sm:h-auto sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6">Instaraise</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
                 A leading brand of fastners & nails. Located in the steel belt
                 of India, making it convenient to access finest quality of steel
               </div>
@@ -86,7 +86,7 @@ const work = () => {
                 className="max-w-full sm:w-[350px] w-[450px] sm:h-auto sm:mx-auto h-[550px] hover:scale-105 transition-transform duration-300 ease-in-out"
               ></img>
               <div className="font-bold text-lg mt-4 sm:ml-6">Afleet.io | UX/UI</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               Leverage the potential of user engagement to transform ordinary users into an impassioned brand ambassador army.
               </div>
             </div>
@@ -98,7 +98,7 @@ const work = () => {
                 className="max-w-full sm:w-[350px] sm:mx-auto h-[700px] sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Kalco  Config. | UX/UI</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               The Door Configurator Web Application is a user-friendly platform designed to empower users to customize door designs according to their preferences and specifications
               </div>
             </div>
@@ -108,7 +108,7 @@ const work = () => {
                 className="max-w-full h-[550px] sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               ></img>
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Auro | UI</div>
-              <div className="font-semibold text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               An app that allows to record voice notes, categorizes them and generates summary/ keypoints
               </div>
             </div>
@@ -120,7 +120,7 @@ const work = () => {
                 className="w-[500px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out overflow-hidden mr-44"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Petitfee | Branding | Social media posts</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               Petitfee brings you your non negotiable skin care routine. The products are made in a way that it is super easy to use and can be inculcated in your daily routine
               </div>
             </div>
@@ -130,19 +130,19 @@ const work = () => {
                 className="w-[400px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out mr-4 overflow-hidden -ml-16"
               ></img>
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6 -ml-16">Web3 Meetup | UX</div>
-              <div className="font-semibold text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify -ml-16">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify -ml-16">
               Where India’s web 3 meetup community talks
               </div>
             </div>
           </div>
           <div className="flex justify-center relative top-60 sm:flex-col md:left-32">
-            <div className="mr-32 sm:mr-0">
+            <div className="mr-32 pr-6 sm:pr-0 sm:mr-0">
               <img
                 src={beyondorganicwork}
                 className="w-[400px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Beyond Organic | Package Design</div>
-              <div className="font-semibold text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               Organic grown products from farm to your table.
               </div>
             </div>
@@ -152,7 +152,7 @@ const work = () => {
                 className="max-w-full h-auto sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out sm:ml-[27%] overflow-hidden"
               ></img>
               <div className="font-bold text-lg mt-4 sm:ml-6 sm:w-auto sm:mr-6">Crystal Mattress | Branding | Social Media Posts</div>
-              <div className="font-semibold text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              <div className="font-semibold text-gray-700 text-lg mt-2 w-[340px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
               Premium mattress manufacturers applauded for its ergonomical designs
               </div>
             </div>
@@ -161,12 +161,11 @@ const work = () => {
             <div>
               <img
                 src={huddlework}
-                className="max-w-full w-[1000px] h-[350px] sm:w-[350px] overflow-hidden sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="max-w-full w-[1050px] h-[350px] sm:w-[350px] overflow-hidden sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
               />
-              <div className="font-bold text-lg mt-4 sm:ml-6">Notch</div>
-              <div className="font-semibold text-lg mt-2 sm:w-auto sm:ml-6 sm:mr-6 text-justify">
-                A leading brand of fastners & nails. Located in the steel belt
-                of India, making it convenient to access finest quality of steel
+              <div className="font-bold text-lg mt-4 sm:ml-6">Huddle | Branding</div>
+              <div className="font-semibold text-gray-700 text-lg mt-2 sm:w-auto sm:ml-6 sm:mr-6 text-justify">
+              Packaged design concepts and complete brand guidelines for an upcoming sports application
               </div>
             </div>
           </div>

@@ -38,7 +38,10 @@ const Footer = () => {
                 Socials
               </div>
               <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6">
-                <Link href="https://dribbble.com/alchemy_global" target="_blank">
+                <Link
+                  href="https://dribbble.com/alchemy_global"
+                  target="_blank"
+                >
                   Dribble
                 </Link>
               </div>
@@ -67,18 +70,26 @@ const Footer = () => {
               <div className="text-white text-xl sm:text-md font-bold leading-[30px] tracking-tight">
                 Site
               </div>
-              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6">
-                Work
-              </div>
-              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Plans
-              </div>
-              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Process
-              </div>
-              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
-                Contact
-              </div>
+              <Link to="/work">
+                <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6">
+                  Work
+                </div>
+              </Link>
+              <Link to="/pricing">
+                <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
+                  Plans
+                </div>
+              </Link>
+              <Link to="/process">
+                <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
+                  Process
+                </div>
+              </Link>
+              <a href="mailto:hello@alchemydesign.xyz">
+                <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
+                  Contact
+                </div>
+              </a>
             </div>
             <div
               className="pl-28 sm:pl-[19%]"

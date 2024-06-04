@@ -173,7 +173,7 @@ const PricingMobile = () => {
       <div className="ml-12">
         <img src={sendMail}></img>
         <div className="text-black font-bold text-xl mt-4 w-[200px]">
-          <a href="/">Get in touch</a>
+          <a href="mailto:hello@alchemydesign.xyz">Get in touch</a>
         </div>
         <div className="text-gray-700 font-normal text-sm w-[250px] mt-2">
           Discover the inner workings of Alchemy and explore how it can benefit

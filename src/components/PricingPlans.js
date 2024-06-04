@@ -185,7 +185,7 @@ const PricingPlans = () => {
             <div className="absolute left-[60%] mt-16">
               <img src={sendMail} className="w-8 h-auto"></img>
               <div className="text-black font-bold text-xl mt-4">
-              <a href="/">Get in touch</a>
+              <a href="mailto:hello@alchemydesign.xyz">Get in touch</a>
               </div>
               <div className="text-gray-700 font-normal text-sm w-[250px] mt-2">
                 Discover the inner workings of Alchemy and explore how it can

@@ -7,7 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import NavHam from "../assets/images/NavHam.png";
 
-const Navbar = ({source}) => {
+const Navbar = ({ source }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -64,31 +64,38 @@ const Navbar = ({source}) => {
                     : "text-neutral-400"
                 }`}
                 data-aos={source === "hero" ? "zoom-in-up" : ""}
-                data-aos-duration={source === "hero" ? `${500 + index * 100}` : ""}
+                data-aos-duration={
+                  source === "hero" ? `${500 + index * 100}` : ""
+                }
                 style={{
-                  position: 'relative',
-                  paddingBottom: '0.1rem'
+                  position: "relative",
+                  paddingBottom: "0.1rem",
                 }}
               >
                 {item.label}
-                {normalizePath(location.pathname) === normalizePath(item.to) && (
+                {normalizePath(location.pathname) ===
+                  normalizePath(item.to) && (
                   <span
                     style={{
                       content: '""',
-                      display: 'block',
-                      width: '70%',
-                      height: '1.7px',
-                      backgroundColor: '#4f46e5', // Use your desired color code
-                      position: 'absolute',
-                      bottom: '0',
-                      left: '3%', // Center the line
+                      display: "block",
+                      width: "70%",
+                      height: "1.7px",
+                      backgroundColor: "#4f46e5", // Use your desired color code
+                      position: "absolute",
+                      bottom: "0",
+                      left: "3%", // Center the line
                     }}
                   />
                 )}
               </div>
             </Link>
           ))}
-          <a href="https://medium.com/@hello_36790" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://medium.com/@hello_36790"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className="text-neutral-400 text-sm font-medium tracking-tight"
               data-aos={source === "hero" ? "zoom-in-up" : ""}
@@ -97,14 +104,15 @@ const Navbar = ({source}) => {
               Blogs
             </div>
           </a>
-
-          <button className="pt-0 ml-4">
-            <div className="w-[120px] h-10 px-5 py-4 bg-indigo-600 rounded-[51px] shadow-md shadow-slate-400 justify-center items-center inline-flex hover:shadow-none">
-              <div className="text-white font-medium text-sm pb-[2px]">
-                Contact Us
+          <a href="mailto:hello@alchemydesign.xyz">
+            <button className="pt-0 ml-4">
+              <div className="w-[120px] h-10 px-5 py-4 bg-indigo-600 rounded-[51px] shadow-md shadow-slate-400 justify-center items-center inline-flex hover:shadow-none">
+                <div className="text-white font-medium text-sm pb-[2px]">
+                  Contact Us
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

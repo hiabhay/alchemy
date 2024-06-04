@@ -179,14 +179,15 @@ const ContactForm = () => {
           We'll be in touch shortly
         </div>
 
-        <div className="absolute text-xs font-semibold underline bottom-[7%] left-[28%]">
-          SEND ANOTHER ENQUIRY
-        </div>
+        
 
         <button
           onClick={() => setIsFlipped(false)}
           className="absolute top-[87%] left-[80%] bg-white w-[38px] h-[38px] rounded-full"
         >
+        <div className="absolute text-xs font-semibold underline bottom-[25%] right-12 w-[150px]">
+          SEND ANOTHER ENQUIRY
+        </div>
           <img src={arrowUp} className="w-4 h-auto ml-[9px]"></img>
         </button>
       </div>
