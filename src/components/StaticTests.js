@@ -9,7 +9,7 @@ const StaticTests = () => {
   return (
     <div className="mt-16">
       <div
-        className="bg-white w-[340px] h-[230px] rounded-2xl mx-auto"
+        className="bg-white w-[340px] h-[240px] rounded-2xl mx-auto"
         style={{ boxShadow: "0px 0px 50px rgba(0, 0, 0, 0.20)" }}
       >
         <img
@@ -21,7 +21,7 @@ const StaticTests = () => {
           experience. Their expertise and creativity have exceeded our
           expectations, resulting in an intuitive and engaging interface.
         </div>
-        <div className="flex pt-9 pl-6">
+        <div className="flex pt-8 pl-6">
           <img src={Jay} className="w-[50px] h-auto"></img>
           <div>
             <div className="font-serif text-xl pl-4">Jay Gandhi</div>
