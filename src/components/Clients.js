@@ -9,6 +9,8 @@ import meetuplive from '../assets/images/meetuplive.png'
 import Notch from '../assets/images/Notch.png'
 import Petitfee from '../assets/images/Petitfee.png'
 import Maskgroup from '../assets/images/Maskgroup.png'
+import turfImg from '../assets/images/turfImg.png'
+import auraAi from '../assets/images/auraAi.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -31,15 +33,16 @@ const Clients = () => {
         <img className="w-[100px] h-[32px] mt-4 mr-20" src={Beyondorganics} data-aos="zoom-in"></img>
         <img className="w-[100px] h-[32px] mt-4 mr-20" src={instaraise} data-aos="zoom-in"></img>
         </div>
-        <div className="flex pl-[25%] pt-20 sm:pl-0">
+        <div className="flex pl-[15%] pt-20 sm:pl-0">
         <img className="w-[100px] h-[28px] mt-6 mr-20" src={afleet} data-aos="zoom-in"></img>
         <img className="w-[100px] h-[28px] mt-6 mr-20" src={meetuplive} data-aos="zoom-in"></img>
-        <img className="w-[40px] h-[24px] mt-6 mr-20" src={LIT} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[22px] mt-6 mr-20" src={auraAi} data-aos="zoom-in"></img>
         <img className="w-[100px] h-[28px] mt-4 mr-20" src={Krishitokri} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[28px] mt-4 mr-20" src={turfImg} data-aos="zoom-in"></img>
         </div>
         </div>
         {/* For Phones */} 
-        <div className="md:hidden xl:hidden 2xl:hidden lg:hidden mt-[7%] w-auto -mb-[40%]">
+        <div className="hidden sm:block mt-[7%] w-auto -mb-[40%]">
         <div className="flex">
         <img className="w-[70px] h-[35px] mt-4 mr-[2%] ml-[3%]" src={Maskgroup} data-aos="zoom-in"></img>
         <img className="w-[100px] h-[24px] mt-5 mr-[2%] ml-[2%]" src={Notch} data-aos="zoom-in"></img>
@@ -54,6 +57,10 @@ const Clients = () => {
         <div className="flex mt-[10%] ml-[13%]">
         <img className="w-[130px] h-[28px] mt-6 mr-4" src={meetuplive} data-aos="zoom-in"></img>
         <img className="w-[130px] h-[30px] mt-5" src={Krishitokri} data-aos="zoom-in"></img>
+        </div>
+        <div className="flex mt-[10%] ml-[17%]">
+        <img className="w-[100px] h-[18px] mt-6 mr-4" src={auraAi} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[28px] mt-5" src={turfImg} data-aos="zoom-in"></img>
         </div>
         </div>
       </div>
