@@ -16,7 +16,7 @@ const Second = () => {
         data-aos-delay="200"
         data-aos-duration="800"
       >
-        <a href="https://www.behance.net/gallery/195170515/Web3-Gaming-Platform" target="blank">
+        <a href="https://turf.network/" target="blank">
           <img
             src={secWork}
             className="max-w-full h-[550px] sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"

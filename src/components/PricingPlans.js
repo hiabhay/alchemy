@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Section from "../components/Section";
 import Check from "../assets/images/Check-circle.png";
 import moneyIcon from "../assets/images/moneyIcon.png";
 import sendMail from "../assets/images/sendMail.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const PricingPlans = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   const handleGetInTouchClick = () => {
     // Navigate to homepage
     window.location.href = "/";
@@ -23,7 +28,12 @@ const PricingPlans = () => {
             style={{ boxShadow: "0px 0px 25px rgba(0, 0, 0, 0.1)" }}
           >
             {/* 1st Plan */}
-            <div className="relative bg-indigo-700 w-[250px] h-[420px] rounded-2xl bottom-8 left-10">
+            <div
+              className="relative bg-indigo-700 w-[250px] h-[420px] rounded-2xl bottom-8 left-10"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="800"
+            >
               <button className="relative bg-white w-[105px] h-6 rounded-2xl text-indigo-700 text-[10px] font-semibold left-[48%] top-3">
                 MOST POPULAR
               </button>
@@ -185,7 +195,7 @@ const PricingPlans = () => {
             <div className="absolute left-[60%] mt-16">
               <img src={sendMail} className="w-8 h-auto"></img>
               <div className="text-black font-bold text-xl mt-4">
-              <a href="mailto:hello@alchemydesign.xyz">Get in touch</a>
+                <a href="mailto:hello@alchemydesign.xyz">Get in touch</a>
               </div>
               <div className="text-gray-700 font-normal text-sm w-[250px] mt-2">
                 Discover the inner workings of Alchemy and explore how it can

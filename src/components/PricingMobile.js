@@ -1,17 +1,23 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Section from "../components/Section";
 import Check from "../assets/images/Check-circle.png";
 import moneyIcon from "../assets/images/moneyIcon.png";
 import sendMail from "../assets/images/sendMail.png";
 import Link from "gatsby";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const PricingMobile = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <Section>
     <div className="mb-16">
       <div className="flex justify-center">
         {/* 1st Plan */}
-        <div className="relative bg-indigo-700 w-[250px] h-[420px] rounded-2xl mt-10">
+        <div className="relative bg-indigo-700 w-[250px] h-[420px] rounded-2xl mt-10" data-aos="fade-up"
+        data-aos-duration="800">
           <button className="relative bg-white w-[105px] h-6 rounded-2xl text-indigo-700 text-[10px] font-semibold left-[48%] top-3">
             MOST POPULAR
           </button>
@@ -91,7 +97,9 @@ const PricingMobile = () => {
       </div>
 
       {/* 2nd Plan */}
-      <div className="flex justify-center mb-28 mt-10">
+      <div className="flex justify-center mb-28 mt-10" data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="800">
         <div className="relative w-[250px] h-[420px] rounded-2xl shadow-2xl shadow-indigo-400">
           <div className="flex relative left-4 top-8">
             <div className="text-black text-3xl font-semibold">$5999</div>

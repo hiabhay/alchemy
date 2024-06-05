@@ -1,22 +1,21 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Section from "../components/Section";
 import star from "../assets/images/star.png";
 import yelloEllipse from "../assets/images/yellowEllipse.svg";
-import DeliveryIcon from "../assets/images/DeliveryIcon.png";
-import Lock from "../assets/images/Lock.png";
-import InfiniteIcon from "../assets/images/InfiniteIcon.png";
-import Calendar from "../assets/images/Calendar.png";
-import WorkIcon from "../assets/images/WorkIcon.png";
-import VerifyIcon from "../assets/images/VerifyIcon.png";
-import NavFooter from "../components/NavFooter";
 import PricingPlans from "../components/PricingPlans";
 import Footer from "../components/Footer";
 import PCPlans from "../components/PCPlans";
 import MobilePlans from "../components/MobilePlans";
 import PricingMobile from "../components/PricingMobile";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import helmet from "helmet";
 
 const Pricing = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   const pricingRef = useRef(null);
 
   const scrollToPricing = () => {
@@ -25,6 +24,9 @@ const Pricing = () => {
 
   return (
     <div>
+      <helmet>
+        <title>Pricing | Alchemy</title>
+      </helmet>
       <Section>
         <Navbar />
         <div className="relative">
@@ -97,16 +99,23 @@ const Pricing = () => {
               <PCPlans />
             </div>
             <div className="hidden sm:block">
-              <MobilePlans/>
+              <MobilePlans />
             </div>
           </div>
 
           {/* Plans */}
-          <div className="mt-20" ref={pricingRef}>
+          <div
+            className="mt-20"
+            ref={pricingRef}
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <div className="text-center font-bold text-4xl">Plans we offer</div>
             <div className="text-center mt-4 font-semibold sm:w-auto">
-              Select the plan that best suits your needs<br className="hidden sm:block"></br> from the most
-              transparent pricing
+              Select the plan that best suits your needs
+              <br className="hidden sm:block"></br> from the most transparent
+              pricing
             </div>
           </div>
 
@@ -116,7 +125,7 @@ const Pricing = () => {
             <PricingPlans />
           </div>
           <div className="hidden sm:block">
-            <PricingMobile/>
+            <PricingMobile />
           </div>
         </div>
       </Section>

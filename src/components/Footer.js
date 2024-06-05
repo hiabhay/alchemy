@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "gatsby";
 
-const Footer = () => {
+const Footer = ({ scrollToContact }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -61,6 +61,22 @@ const Footer = () => {
                   Instagram
                 </Link>
               </div>
+              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
+                <Link
+                  href="https://www.behance.net/alchemyglobalstudio"
+                  target="_blank"
+                >
+                  Behance
+                </Link>
+              </div>
+              <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61560205553275"
+                  target="_blank"
+                >
+                  Facebook
+                </Link>
+              </div>
             </div>
             <div
               className="pl-28 sm:pl-[17%]"
@@ -85,11 +101,11 @@ const Footer = () => {
                   Process
                 </div>
               </Link>
-              <a href="mailto:hello@alchemydesign.xyz">
+              <button onClick={scrollToContact}>
                 <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
                   Contact
                 </div>
-              </a>
+              </button>
             </div>
             <div
               className="pl-28 sm:pl-[19%]"

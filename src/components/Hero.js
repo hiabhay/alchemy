@@ -25,7 +25,6 @@ const Hero = () => {
 
   return (
     <Section>
-      <Navbar source="hero" />
       <div className="relative pb-16 sm:pb-0 flex">
         <div data-aos="fade-up">
           <div className="max-w-full sm:w-auto">

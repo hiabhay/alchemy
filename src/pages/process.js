@@ -5,6 +5,7 @@ import Enterprise from "../components/Enterprise";
 import Startup from "../components/Startup";
 import NavFooter from "../components/NavFooter";
 import Footer from "../components/Footer";
+import helmet from "helmet";
 
 const Process = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -13,6 +14,9 @@ const Process = () => {
 
   return (
     <div>
+    <helmet>
+      <title>Process | Alchemy</title>
+    </helmet>
       <Section>
         <Navbar />
         <div className="relative mb-28">
