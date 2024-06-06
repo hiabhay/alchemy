@@ -5,7 +5,6 @@ import firstWork from "../assets/images/firstWork.png";
 import secWork from "../assets/images/secWork.png";
 import thirdWork from "../assets/images/thirdWork.png";
 import fourthWork from "../assets/images/fourthWork.png";
-import helmet from "helmet";
 import kalcowork from "../assets/images/kalcowork.png";
 import afleetwork from "../assets/images/afleetwork.png";
 import auraaiwork from "../assets/images/auraaiwork.png";
@@ -17,6 +16,7 @@ import crystalmatfoamwork from "../assets/images/crystalmatfoamwork.png";
 import Footer from "../components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import SEO from "../components/SEO";
 
 const Work = () => {
   useEffect(() => {
@@ -24,9 +24,10 @@ const Work = () => {
   }, []);
   return (
     <div>
-      <helmet>
-        <title>Work | Alchemy</title>
-      </helmet>
+      <SEO
+        title="Work"
+        description="Explore our portfolio at Alchemy Design. See how we transform ideas into stunning and impactful designs and products."
+      />
       <Section>
         <Navbar />
         <div className="relative mb-44">
@@ -38,9 +39,12 @@ const Work = () => {
               Featured<span className="text-indigo-600"> Stories</span>
             </div>
           </div>
-          <div className="flex justify-center relative top-44 sm:flex-col md:left-32" data-aos="fade-up"
+          <div
+            className="flex justify-center relative top-44 sm:flex-col md:left-32"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div className="mr-28 sm:mr-0 md:mr-0">
               <a href="https://crystalfasteners.com/" target="_blank">
                 <img
@@ -57,9 +61,12 @@ const Work = () => {
                 of India, making it convenient to access finest quality of steel
               </div>
             </div>
-            <div className="ml-28 sm:ml-0 sm:mt-10" data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="800">
+            <div
+              className="ml-28 sm:ml-0 sm:mt-10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
               <a
                 href="https://www.behance.net/gallery/199520897/Turf-eSports-Companion"
                 target="_blank"
@@ -77,9 +84,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative mt-60" data-aos="fade-up"
+          <div
+            className="flex justify-center relative mt-60"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div>
               <a
                 href="https://www.behance.net/gallery/197152737/Notch"
@@ -98,9 +108,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-24 sm:flex-col sm:top-12" data-aos="fade-up"
+          <div
+            className="flex justify-center relative top-24 sm:flex-col sm:top-12"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div className="mr-28 sm:mr-0">
               <a href="https://instaraise.io/" target="_blank">
                 <img
@@ -115,9 +128,12 @@ const Work = () => {
                 of India, making it convenient to access finest quality of steel
               </div>
             </div>
-            <div className="ml-28 sm:ml-0 sm:mt-12" data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="800">
+            <div
+              className="ml-28 sm:ml-0 sm:mt-12"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
               <a
                 href="https://www.behance.net/gallery/200065343/Afleet-Marketing-SaaS"
                 target="_blank"
@@ -137,9 +153,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-44 sm:flex-col mr-24 sm:mr-0" data-aos="fade-up"
+          <div
+            className="flex justify-center relative top-44 sm:flex-col mr-24 sm:mr-0"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div className="mr-28 sm:mr-0 md:mr-0">
               <a
                 href="https://www.behance.net/gallery/200050859/Kalco-Configurator"
@@ -160,9 +179,12 @@ const Work = () => {
                 according to their preferences and specifications
               </div>
             </div>
-            <div className="ml-28 sm:ml-0 sm:mt-10" data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="800">
+            <div
+              className="ml-28 sm:ml-0 sm:mt-10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
               <img
                 src={auraaiwork}
                 className="max-w-full h-[550px] sm:w-[350px] sm:mx-auto sm:h-auto hover:scale-105 transition-transform duration-300 ease-in-out"
@@ -176,9 +198,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-48 sm:flex-col" data-aos="fade-up"
+          <div
+            className="flex justify-center relative top-48 sm:flex-col"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div className="sm:mr-0 mr-8 overflow-hidden">
               <a
                 href="https://www.instagram.com/petitfee_india/"
@@ -199,9 +224,12 @@ const Work = () => {
                 be inculcated in your daily routine
               </div>
             </div>
-            <div className="sm:ml-0 sm:mt-10 sm:w-auto" data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="800">
+            <div
+              className="sm:ml-0 sm:mt-10 sm:w-auto"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
               <img
                 src={wemeetup}
                 className="w-[400px] h-auto sm:w-[350px] sm:mx-auto hover:scale-105 transition-transform duration-300 ease-in-out mr-4 overflow-hidden -ml-16"
@@ -214,9 +242,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative top-60 sm:flex-col md:left-32" data-aos="fade-up"
+          <div
+            className="flex justify-center relative top-60 sm:flex-col md:left-32"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div className="mr-32 pr-6 sm:pr-0 sm:mr-0">
               <a
                 href="https://www.behance.net/gallery/200051341/Beyond-Organic-Branding"
@@ -235,9 +266,12 @@ const Work = () => {
                 Organic grown products from farm to your table.
               </div>
             </div>
-            <div className="ml-16 sm:ml-0 sm:mt-10 w-[400px] sm:w-auto h-[600px] overflow-hidden" data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="800">
+            <div
+              className="ml-16 sm:ml-0 sm:mt-10 w-[400px] sm:w-auto h-[600px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
               <a
                 href="https://www.behance.net/gallery/200051095/Crystal-Matform-Social-Media"
                 target="_blank"
@@ -257,9 +291,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center relative mt-60 sm:mt-44" data-aos="fade-up"
+          <div
+            className="flex justify-center relative mt-60 sm:mt-44"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div>
               <img
                 src={huddlework}

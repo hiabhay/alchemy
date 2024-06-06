@@ -7,6 +7,15 @@ import "aos/dist/aos.css";
 import { Link } from "gatsby";
 
 const Footer = ({ scrollToContact }) => {
+  const handleButtonClick = () => {
+    const isHomepage = window.location.pathname === "/";
+    
+    if (isHomepage) {
+      scrollToContact();
+    } else {
+      window.location.href = "/";
+    }
+  };
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -101,7 +110,7 @@ const Footer = ({ scrollToContact }) => {
                   Process
                 </div>
               </Link>
-              <button onClick={scrollToContact}>
+              <button onClick={handleButtonClick}>
                 <div className="text-white text-opacity-75 text-lg font-normal leading-[23px] tracking-tight pt-6 sm:pt-3">
                   Contact
                 </div>

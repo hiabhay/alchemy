@@ -12,7 +12,7 @@ import Faqs from "../components/Faqs";
 import Contact from "../components/Contact";
 import OurDomain from "../components/OurDomain";
 import CarouselCheck from "../components/CarouselCheck";
-import helmet from "helmet";
+import SEO from "../components/SEO";
 
 export default function Home() {
   const contactRef = useRef(null);
@@ -24,9 +24,11 @@ export default function Home() {
   };
   return (
     <div>
-      <helmet>
-        <title>Alchemy Design</title>
-      </helmet>
+      <SEO
+        title="Home"
+        description="Alchemy is associated with transformation and the blending of different
+                    elements to create something valuable. Keeping this in mind, we are always dedicated to provide stunningly simple solutions that engage users and stimulates business. Our team of talented designers, developers possess ability to transform ideas and concepts into impactful products and designs."
+      />
       <Navbar source="hero" scrollToContact={scrollToContact} />
       <Hero />
       <IntroVideo />

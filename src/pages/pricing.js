@@ -10,7 +10,7 @@ import MobilePlans from "../components/MobilePlans";
 import PricingMobile from "../components/PricingMobile";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import helmet from "helmet";
+import SEO from "../components/SEO";
 
 const Pricing = () => {
   useEffect(() => {
@@ -24,9 +24,7 @@ const Pricing = () => {
 
   return (
     <div>
-      <helmet>
-        <title>Pricing | Alchemy</title>
-      </helmet>
+    <SEO title="Plans" description="Discover our plans at Alchemy Design. We offer creative solutions to transform your ideas into impactful designs and products."/>
       <Section>
         <Navbar />
         <div className="relative">

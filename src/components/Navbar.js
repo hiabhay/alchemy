@@ -11,6 +11,15 @@ import whiteCross from '../assets/images/whiteCross.png'
 import alterLogo from '../assets/images/alterLogo.png'
 
 const Navbar = ({ source, scrollToContact }) => {
+  const handleButtonClick = () => {
+    const isHomepage = window.location.pathname === "/";
+    
+    if (isHomepage) {
+      scrollToContact();
+    } else {
+      window.location.href = "/";
+    }
+  };
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -100,7 +109,7 @@ const Navbar = ({ source, scrollToContact }) => {
               Blogs
             </div>
           </a>
-          <button className="pt-0 ml-4" onClick={scrollToContact}>
+          <button className="pt-0 ml-4" onClick={handleButtonClick}>
             <div className="w-[120px] h-10 px-5 py-4 bg-indigo-600 rounded-[51px] shadow-md shadow-slate-400 justify-center items-center inline-flex hover:shadow-none">
               <div className="text-white font-medium text-sm pb-[2px]">
                 Contact Us

@@ -5,7 +5,7 @@ import Enterprise from "../components/Enterprise";
 import Startup from "../components/Startup";
 import NavFooter from "../components/NavFooter";
 import Footer from "../components/Footer";
-import helmet from "helmet";
+import SEO from "../components/SEO";
 
 const Process = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -14,9 +14,10 @@ const Process = () => {
 
   return (
     <div>
-    <helmet>
-      <title>Process | Alchemy</title>
-    </helmet>
+      <SEO
+        title="Process"
+        description="Explore Alchemy Design's process, tailored for startups and enterprises."
+      />
       <Section>
         <Navbar />
         <div className="relative mb-28">
