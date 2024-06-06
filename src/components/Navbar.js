@@ -34,7 +34,7 @@ const Navbar = ({ source, scrollToContact }) => {
 
   return (
     <Section>
-      <div className={`flex justify-between items-center p-4 sm:pb-0 relative ${isOpen ? "bg-indigo-600" : ""}`}>
+      <div className={`flex justify-between items-center p-4 sm:pb-0 relative ${isOpen ? "bg-indigo-600 transition-all duration-100 ease-in-out mb-1" : ""}`}>
         {/* Branding */}
         <div>
           <Link to="/">
@@ -139,7 +139,7 @@ const Navbar = ({ source, scrollToContact }) => {
               <div className="font-bold text-2xl w-auto mb-8">Blog</div>
             </a>
           </div>
-          <div className="absolute right-[25%] top-[13.5%] mb-16">
+          <div className="absolute right-[25%] mb-16 mt-16">
             <a
               href="https://www.behance.net/alchemyglobalstudio"
               target="_blank"
@@ -179,12 +179,12 @@ const Navbar = ({ source, scrollToContact }) => {
             & Experience Craft
           </div>
           <div className="w-[200px] relative top-[30%] left-[5%]">
-          <a href="mailto:hello@alchemydesign.xyz">
+          <button onClick={scrollToContact}>
           <button className="w-[140px] h-[40px] rounded-3xl text-indigo-600 border border-indigo-600 flex">
               <div className="mt-[4px] ml-4">Get in touch</div>
               <img className="mt-[13px] ml-2" src={indigoArrow} />
             </button>
-          </a>
+          </button>
             
           </div>
           <div className="relative w-[200px] top-[40%] left-[5%] flex">
