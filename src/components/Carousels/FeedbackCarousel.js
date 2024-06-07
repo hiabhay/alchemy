@@ -5,47 +5,50 @@ import QuoteIcon from "../../assets/images/QuoteIcon.png";
 import Shivani from "../../assets/images/Shivani.png";
 import Jay from "../../assets/images/Jay.png";
 import Yashveer from "../../assets/images/Yashveer.png";
+import Shahil from "../../assets/images/Shahil.jpg";
+import Ellipse from "../../assets/images/Ellipse.png";
+import Aditya from "../../assets/images/Aditya.png";
 
 const FeedbackCarousel = () => {
-  // const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  // useEffect(() => {
-  //   const handleScroll = (event) => {
-  //     const delta =
-  //       -1 * Math.max(-1, Math.min(1, event.deltaY || -event.detail)); // Invert delta value
-  //     const slider = document.getElementById("feedback-carousel");
-  //     if (slider) {
-  //       const sliderRect = slider.getBoundingClientRect();
-  //       const mouseY = event.clientY - sliderRect.top;
-  //       if (mouseY >= 0 && mouseY <= sliderRect.height) {
-  //         event.preventDefault(); // Prevent default behavior of scrolling only when over carousel
-  //         const sensitivityFactor = 0.2; // Adjust sensitivity
-  //         const deltaAdjusted = delta * sensitivityFactor;
-  //         const nextSlide = currentSlide - deltaAdjusted;
-  //         if (nextSlide >= 0 && nextSlide <= 2) {
-  //           // Adjust for total number of slides
-  //           setCurrentSlide(nextSlide);
-  //         } else if (nextSlide < 0) {
-  //           setCurrentSlide(0);
-  //           event.preventDefault(); // Prevent default scroll behavior at the first slide
-  //         } else {
-  //           setCurrentSlide(2); // Adjust for total number of slides
-  //           event.preventDefault(); // Prevent default scroll behavior at the last slide
-  //         }
-  //       }
-  //     }
-  //   };
+  useEffect(() => {
+    const handleScroll = (event) => {
+      const delta =
+        -1 * Math.max(-1, Math.min(1, event.deltaY || -event.detail)); // Invert delta value
+      const slider = document.getElementById("feedback-carousel");
+      if (slider) {
+        const sliderRect = slider.getBoundingClientRect();
+        const mouseY = event.clientY - sliderRect.top;
+        if (mouseY >= 0 && mouseY <= sliderRect.height) {
+          event.preventDefault(); // Prevent default behavior of scrolling only when over carousel
+          const sensitivityFactor = 0.2; // Adjust sensitivity
+          const deltaAdjusted = delta * sensitivityFactor;
+          const nextSlide = currentSlide - deltaAdjusted;
+          if (nextSlide >= 0 && nextSlide <= 2) {
+            // Adjust for total number of slides
+            setCurrentSlide(nextSlide);
+          } else if (nextSlide < 0) {
+            setCurrentSlide(0);
+            event.preventDefault(); // Prevent default scroll behavior at the first slide
+          } else {
+            setCurrentSlide(2); // Adjust for total number of slides
+            event.preventDefault(); // Prevent default scroll behavior at the last slide
+          }
+        }
+      }
+    };
 
-  //   document
-  //     .getElementById("feedback-carousel")
-  //     .addEventListener("wheel", handleScroll);
+    document
+      .getElementById("feedback-carousel")
+      .addEventListener("wheel", handleScroll);
 
-  //   return () => {
-  //     document
-  //       .getElementById("feedback-carousel")
-  //       .removeEventListener("wheel", handleScroll);
-  //   };
-  // }, [currentSlide]);
+    return () => {
+      document
+        .getElementById("feedback-carousel")
+        .removeEventListener("wheel", handleScroll);
+    };
+  }, [currentSlide]);
 
   return (
     <div
@@ -56,15 +59,15 @@ const FeedbackCarousel = () => {
       <CarouselProvider
         naturalSlideWidth={500}
         naturalSlideHeight={190}
-        totalSlides={3}
+        totalSlides={4}
         visibleSlides={2}
         orientation="vertical"
         isPlaying={true}
         infinite={true}
         dragEnabled={true}
         touchEnabled={false}
-        interval={3500}
-        // currentSlide={currentSlide}
+        interval={2500}
+        currentSlide={currentSlide}
       >
         <Slider>
           <Slide index={0}>
@@ -75,18 +78,20 @@ const FeedbackCarousel = () => {
               <div className="pt-2 ml-5 sm:pt-1">
                 <img src={QuoteIcon} className="max-w-full h-[30px]" />
                 <div className="w-[420px] sm:w-auto pt-1 font-semibold text-sm pr-2 text-justify">
-                  Alchemy has been instrumental in transforming our fitness
-                  app's user experience. Their expertise and creativity have
-                  exceeded our expectations, resulting in an intuitive and
-                  engaging interface.
+                  Working with Alchemy Design was transformative. Their
+                  collaborative, innovative approach to UX brought a unique
+                  perspective to our projects. Highly recommended for impactful
+                  and creative UX design solutions.
                 </div>
                 <div className="flex">
-                  <img src={Jay} className="max-w-full h-[40px] mt-2" />
+                  <img src={Aditya} className="max-w-full h-[40px] mt-2" />
                   <div>
                     <div className="font-semibold font-serif pt-2 pl-3">
-                      Jay Gandhi
+                      Adita Gautam
                     </div>
-                    <div className="font-normal text-xs pl-3">CTO Notch</div>
+                    <div className="font-normal text-xs pl-3">
+                      Co-Founder Turf
+                    </div>
                   </div>
                 </div>
               </div>
@@ -97,19 +102,17 @@ const FeedbackCarousel = () => {
               className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0"
               style={{ boxShadow: "0px 0px 25px rgba(0, 0, 0, 0.2)" }}
             >
-              <div className="pt-2 ml-5 sm:pt-1">
+              <div className="absolute top-[15%] ml-5 sm:pt-1">
                 <img src={QuoteIcon} className="max-w-full h-[30px]" />
                 <div className="w-[420px] sm:w-auto pt-1 font-semibold text-sm pr-2 text-justify">
-                  Alchemy team has revolutionized our mattress company's online
-                  presence. With their innovative designs and flawless
-                  development, our customers now enjoy a seamless shopping
-                  experience.
+                  The overall work experience with your company is great the
+                  best part is you complete the work within the given timeline.
                 </div>
-                <div className="flex">
+                <div className="absolute top-[140%] flex">
                   <img src={Shivani} className="max-w-full h-[40px] mt-2" />
                   <div>
                     <div className="font-semibold font-serif pt-2 pl-3">
-                      Shivani Agarwal
+                      Shivani Poddar
                     </div>
                     <div className="font-normal text-xs pl-3">
                       CEO Crystal Mat-Foam
@@ -127,13 +130,15 @@ const FeedbackCarousel = () => {
               <div className="pt-2 ml-5 sm:pt-1">
                 <img src={QuoteIcon} className="max-w-full h-[30px]" />
                 <div className="w-[420px] sm:w-auto pt-1 font-semibold text-sm pr-2 text-justify">
-                  The UI/UX team has played a crucial role in revolutionizing
-                  our farm supplies vendor app. Their expertise in design and
-                  user experience has elevated our platform, resulting in an
-                  intuitive and user friendly app.
+                  Choosing Alchemy was the best decision for our website! Their
+                  creativity and expertise turned our vision into a stunning
+                  reality. Highly recommend!
                 </div>
-                <div className="flex">
-                  <img src={Yashveer} className="max-w-full h-[40px] mt-2" />
+                <div className="absolute top-[65%] flex">
+                  <img
+                    src={Shahil}
+                    className="w-[40px] h-[40px] rounded-full mt-2"
+                  />
                   <div>
                     <div className="font-semibold font-serif pt-2 pl-3">
                       Yashveer Talan
@@ -146,182 +151,31 @@ const FeedbackCarousel = () => {
               </div>
             </div>
           </Slide>
-          {/* <Slide index={3}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
+          <Slide index={3}>
+            <div
+              className="w-[480px] h-[185px] rounded-xl m-4 ml-4 pb-4 sm:pl-0"
+              style={{ boxShadow: "0px 0px 25px rgba(0, 0, 0, 0.2)" }}
+            >
+              <div className="pt-2 ml-5 sm:pt-1">
                 <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
+                <div className="w-[420px] sm:w-auto pt-1 font-semibold text-sm pr-2 text-justify">
+                  Working with Alchemy was a pleasure. Their stunning graphics
+                  transformed our social media, perfectly capturing Clarity, our
+                  drinking water brand. Their creativity exceeded our
+                  expectations. Highly recommend.
                 </div>
                 <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
+                  <img src={Ellipse} className="max-w-full h-[40px] mt-2" />
                   <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
+                    <div className="font-semibold font-serif pt-2 pl-3">
+                      Anuj Chauhan
                     </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
+                    <div className="font-normal text-xs pl-3">Clarity</div>
                   </div>
                 </div>
               </div>
             </div>
           </Slide>
-          <Slide index={4}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide>
-          <Slide index={5}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide>
-          <Slide index={6}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide>
-          <Slide index={7}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide>
-          <Slide index={8}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide>
-          <Slide index={9}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide>
-          <Slide index={10}>
-            <div className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0 " style={{ boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.2)' }}>
-            <div className="pt-5 ml-5 sm:pt-1">
-                <img src={QuoteIcon} className="max-w-full h-[30px]" />
-                <div className="w-[420px] sm:w-auto pt-4 font-normal pr-2 sm:pt-2">
-                  Tempore velit velit expedita sit culpa ut non. Tempora aut
-                  ipsam. Quaerat et consequatur nisi et eveniet placeat.
-                </div>
-                <div className="flex">
-                  <img src={Ellipse30} className="max-w-full h-[40px] mt-4" />
-                  <div>
-                    <div className="font-semibold font-serif pt-4 pl-3">
-                      Dewey Considine
-                    </div>
-                    <div className="font-normal text-xs pl-3">
-                      CEO MAPLE TECHNOLOGIES
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slide> */}
         </Slider>
       </CarouselProvider>
     </div>

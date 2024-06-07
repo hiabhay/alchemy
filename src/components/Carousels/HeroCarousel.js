@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Aditya from '../../assets/images/Aditya.png'
-import Shivani from '../../assets/images/Shivani.png'
+import Aditya from "../../assets/images/Aditya.png";
+import Shivani from "../../assets/images/Shivani.png";
 import rightArrowWhite from "../../assets/images/rightArrowWhite.png";
+import Ellipse from "../../assets/images/Ellipse.png";
+import Shahil from "../../assets/images/Shahil.jpg"
 import {
   CarouselProvider,
   Slider,
@@ -15,13 +17,13 @@ const HeroCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const handleNextButtonClick = () => {
-    const nextSlide = (activeSlide + 1) % 2;
+    const nextSlide = (activeSlide + 1) % 4;
     setActiveSlide(nextSlide);
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const nextSlide = (activeSlide + 1) % 2;
+      const nextSlide = (activeSlide + 1) % 4;
       setActiveSlide(nextSlide);
     }, 2000);
     return () => clearInterval(interval);
@@ -32,14 +34,14 @@ const HeroCarousel = () => {
       <CarouselProvider
         naturalSlideWidth={350}
         naturalSlideHeight={200}
-        totalSlides={2}
+        totalSlides={4}
         infinite={true}
         currentSlide={activeSlide}
         isPlaying={true}
         interval={2000}
       >
         <div className="flex pb-2">
-          {[...Array(2).keys()].map((index) => (
+          {[...Array(4).keys()].map((index) => (
             <div
               key={index}
               className={`h-[6px] rounded-full ${
@@ -57,7 +59,11 @@ const HeroCarousel = () => {
               part is you complete the work within the given timeline
             </div>
             <div className="flex pt-6">
-              <img className="w-[50px] h-[50px]" src={Shivani} alt="Ellipse"></img>
+              <img
+                className="w-[50px] h-[50px]"
+                src={Shivani}
+                alt="Ellipse"
+              ></img>
               <div className="pl-4">
                 <div className="font-bold">Shvani Poddar</div>
                 <div className="text-opacity-25">ceo Crystal Matfoa</div>
@@ -72,28 +78,43 @@ const HeroCarousel = () => {
               perspective to our projects.
             </div>
             <div className="flex pt-2">
-              <img className="w-[50px] h-[50px]" src={Aditya} alt="Ellipse"></img>
+              <img
+                className="w-[50px] h-[50px]"
+                src={Aditya}
+                alt="Ellipse"
+              ></img>
               <div className="pl-4">
                 <div className="font-bold">Aditya Gautam</div>
-                <div className="text-opacity-25">Founder Turf</div>
+                <div className="text-opacity-25">Co-Founder Turf</div>
               </div>
             </div>
           </Slide>
-          {/* <Slide className="text-black" index={2}>
-
+          <Slide className="text-black" index={2}>
             <div className="text-sm font-semibold mb-2">
-              Voluptatem aliquam sunt ipsa culpa pariatur qui. Quibusdam
-              consequatur sed sed repellat iste ratione dolor aut. Explicabo
-              labore reprehenderit
+              Choosing Alchemy was the best decision for our website! Their
+              creativity and expertise turned our vision into a stunning
+              reality. Highly recommend!
             </div>
             <div className="flex pt-2">
-              <img className="h-max w-max" src={Ellipse} alt="Ellipse"></img>
+              <img className="w-[50px] h-[50px] rounded-full" src={Shahil} alt="Ellipse"></img>
               <div className="pl-4">
-                <div className="font-bold">Aditya Gautam</div>
-                <div className="text-opacity-25">ceo Instaraise</div>
+                <div className="font-bold">Shahil</div>
+                <div className="text-opacity-25">Crystal Fasteners</div>
               </div>
             </div>
-          </Slide> */}
+          </Slide>
+          <Slide className="text-black" index={3}>
+            <div className="text-sm font-semibold mb-2">
+            Alchemy transformed our social media with stunning graphics, capturing Clarity. Their creativity and professionalism exceeded our expectations. Highly recommend.
+            </div>
+            <div className="flex pt-2">
+              <img className="w-[50px] h-[50px] rounded-full" src={Ellipse} alt="Ellipse"></img>
+              <div className="pl-4">
+                <div className="font-bold">Anuj Chauhan</div>
+                <div className="text-opacity-25">Clarity</div>
+              </div>
+            </div>
+          </Slide>
         </Slider>
         <ButtonNext
           className="text-white h-[33px] w-[53px] rounded-full bg-black absolute top-28 right-0 mt-2 mr-2"

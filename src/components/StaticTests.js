@@ -4,6 +4,8 @@ import Ellipse30 from "../assets/images/Ellipse30.png";
 import Jay from "../assets/images/Jay.png";
 import Shivani from "../assets/images/Shivani.png";
 import Yashveer from "../assets/images/Yashveer.png";
+import Aditya from "../assets/images/Aditya.png";
+import Shahil from "../assets/images/Shahil.jpg";
 
 const StaticTests = () => {
   return (
@@ -17,11 +19,11 @@ const StaticTests = () => {
           className="w-[30px] h-auto relative top-[8%] left-[6.5%]"
         ></img>
         <div className="text-black w-auto text-sm font-semibold relative top-[10%] text-justify left-[6%] mr-14">
-          Alchemy has been instrumental in transforming our fitness app's user
-          experience. Their expertise and creativity have exceeded our
-          expectations, resulting in an intuitive and engaging interface.
+          Working with Alchemy Design was transformative. Their collaborative,
+          innovative UX approach brought a unique perspective to our projects.
+          Highly recommended.
         </div>
-        <div className="flex pt-8 pl-6">
+        <div className="flex relative top-[17%] pl-6">
           <img src={Jay} className="w-[50px] h-auto"></img>
           <div>
             <div className="font-serif text-xl pl-4">Jay Gandhi</div>
@@ -37,15 +39,14 @@ const StaticTests = () => {
           src={QuoteIcon}
           className="w-[30px] h-auto relative top-[8%] left-[6.5%]"
         ></img>
-        <div className="text-black w-auto text-sm font-semibold relative top-[10%] text-justify left-[6%] mr-14">
-          Alchemy team has revolutionized our mattress company's online
-          presence. With their innovative designs and flawless development, our
-          customers now enjoy a seamless shopping experience.
+        <div className="text-black w-auto text-sm font-semibold relative top-[12%] text-justify left-[6%] mr-14">
+          The overall work experience with your company is great the best part
+          is you complete the work within the given timeline.
         </div>
-        <div className="flex pt-9 pl-6">
+        <div className="flex relative top-[27%] pl-6">
           <img src={Shivani} className="w-[50px] h-auto"></img>
           <div>
-            <div className="font-serif text-xl pl-4">Shivani Agarwal</div>
+            <div className="font-serif text-xl pl-4">Shivani Poddar</div>
             <div className="pl-4 text-sm">CEO Crystal Mat-Foam</div>
           </div>
         </div>
@@ -59,13 +60,12 @@ const StaticTests = () => {
           className="w-[30px] h-auto relative top-[8%] left-[6.5%]"
         ></img>
         <div className="text-black w-auto text-sm font-semibold relative top-[10%] text-justify left-[6%] mr-14">
-          The UI/UX team has played a crucial role in revolutionizing our farm
-          supplies vendor app. Their expertise in design and user experience has
-          elevated our platform, resulting in an intuitive and user friendly
-          app.
+          Choosing Alchemy was the best decision for our website! Their
+          creativity and expertise turned our vision into a stunning reality.
+          Highly recommend!
         </div>
-        <div className="flex pt-9 pl-6">
-          <img src={Yashveer} className="w-[50px] h-auto"></img>
+        <div className="flex relative top-[27%] pl-6">
+          <img src={Shahil} className="w-[50px] h-[50px] rounded-full"></img>
           <div>
             <div className="font-serif text-xl pl-4">Yashveer Talan</div>
             <div className="pl-4 text-sm">CEO Krishi Tokri</div>
