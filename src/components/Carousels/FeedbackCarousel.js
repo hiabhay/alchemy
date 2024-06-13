@@ -39,14 +39,15 @@ const FeedbackCarousel = () => {
       }
     };
 
-    document
-      .getElementById("feedback-carousel")
-      .addEventListener("wheel", handleScroll);
+    const sliderElement = document.getElementById("feedback-carousel");
+    if (sliderElement) {
+      sliderElement.addEventListener("wheel", handleScroll);
+    }
 
     return () => {
-      document
-        .getElementById("feedback-carousel")
-        .removeEventListener("wheel", handleScroll);
+      if (sliderElement) {
+        sliderElement.removeEventListener("wheel", handleScroll);
+      }
     };
   }, [currentSlide]);
 
