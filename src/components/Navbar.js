@@ -13,10 +13,12 @@ import alterLogo from '../assets/images/alterLogo.png'
 const Navbar = ({ source, scrollToContact }) => {
   const handleButtonClick = () => {
     const isHomepage = window.location.pathname === "/";
-    
+  
     if (isHomepage) {
       scrollToContact();
     } else {
+      // Set a flag in local storage
+      localStorage.setItem("scrollToContact", "true");
       window.location.href = "/";
     }
   };

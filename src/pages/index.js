@@ -1,5 +1,4 @@
-// import * as React from "react";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Work from "../components/Work";
@@ -22,12 +21,20 @@ export default function Home() {
       contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    // Check if the flag is set
+    if (localStorage.getItem("scrollToContact") === "true") {
+      localStorage.removeItem("scrollToContact");
+      scrollToContact();
+    }
+  }, []);
+
   return (
     <div>
       <SEO
         title="Home"
-        description="Alchemy is associated with transformation and the blending of different
-                    elements to create something valuable. Keeping this in mind, we are always dedicated to provide stunningly simple solutions that engage users and stimulates business. Our team of talented designers, developers possess ability to transform ideas and concepts into impactful products and designs."
+        description="Alchemy is associated with transformation and the blending of different elements to create something valuable. Keeping this in mind, we are always dedicated to provide stunningly simple solutions that engage users and stimulates business. Our team of talented designers, developers possess ability to transform ideas and concepts into impactful products and designs."
       />
       <Navbar source="hero" scrollToContact={scrollToContact} />
       <Hero />
