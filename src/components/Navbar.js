@@ -7,13 +7,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import NavHam from "../assets/images/NavHam.png";
 import indigoArrow from "../assets/images/indigoArrow.png";
-import whiteCross from '../assets/images/whiteCross.png'
-import alterLogo from '../assets/images/alterLogo.png'
+import whiteCross from "../assets/images/whiteCross.png";
+import alterLogo from "../assets/images/alterLogo.png";
 
 const Navbar = ({ source, scrollToContact }) => {
   const handleButtonClick = () => {
     const isHomepage = window.location.pathname === "/";
-  
+
     if (isHomepage) {
       scrollToContact();
     } else {
@@ -45,14 +45,26 @@ const Navbar = ({ source, scrollToContact }) => {
 
   return (
     <Section>
-      <div className={`flex justify-between items-center p-4 sm:pb-0 relative ${isOpen ? "bg-indigo-600 transition-all duration-100 ease-in-out mb-1" : ""}`}>
+      <div
+        className={`flex justify-between items-center p-4 sm:pb-0 relative ${
+          isOpen
+            ? "bg-indigo-600 transition-all duration-100 ease-in-out mb-1"
+            : ""
+        }`}
+      >
         {/* Branding */}
         <div>
           <Link to="/">
             <button className="flex items-center ml-12 sm:ml-2">
-              <img src={isOpen ? alterLogo : Frame} alt="Logo" className={`w-8 h-auto ${isOpen ? "mt-1" : ""}`} />
+              <img
+                src={isOpen ? alterLogo : Frame}
+                alt="Logo"
+                className={`w-8 h-auto ${isOpen ? "mt-1" : ""}`}
+              />
               <h1
-                className={`font-bold pl-2 text-xl ${isOpen ? "invisible" : "visible"}`}
+                className={`font-bold pl-2 text-xl ${
+                  isOpen ? "invisible" : "visible"
+                }`}
               >
                 ALCHEMY
               </h1>
@@ -132,7 +144,9 @@ const Navbar = ({ source, scrollToContact }) => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden xl:hidden 2xl:hidden w-auto bg-indigo-600 transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          isOpen
+            ? "max-h-screen opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
         } -mt-1`}
       >
         <div className="text-white flex">
@@ -178,8 +192,9 @@ const Navbar = ({ source, scrollToContact }) => {
             >
               <div className="font-thin text-xl w-auto mb-2">Facebook</div>
             </a>
-
-            <div className="font-thin text-xl w-auto mb-2">Contact Us</div>
+            <button onClick={handleButtonClick}>
+              <div className="font-thin text-xl w-auto mb-2">Contact Us</div>
+            </button>
           </div>
         </div>
         <div className="h-[270px] bg-slate-950 w-auto text-white">
@@ -190,13 +205,13 @@ const Navbar = ({ source, scrollToContact }) => {
             & Experience Craft
           </div>
           <div className="w-[200px] relative top-[30%] left-[5%]">
-          <button onClick={scrollToContact}>
-          <button className="w-[140px] h-[40px] rounded-3xl text-indigo-600 border border-indigo-600 flex">
+            <button
+              className="w-[140px] h-[40px] rounded-3xl text-indigo-600 border border-indigo-600 flex"
+              onClick={handleButtonClick}
+            >
               <div className="mt-[4px] ml-4">Get in touch</div>
               <img className="mt-[13px] ml-2" src={indigoArrow} />
             </button>
-          </button>
-            
           </div>
           <div className="relative w-[200px] top-[40%] left-[5%] flex">
             <div className="w-auto text-white opacity-50">India</div>

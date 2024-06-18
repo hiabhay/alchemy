@@ -23,10 +23,12 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Check if the flag is set
     if (localStorage.getItem("scrollToContact") === "true") {
       localStorage.removeItem("scrollToContact");
-      scrollToContact();
+
+      setTimeout(() => {
+        scrollToContact();
+      }, 300);
     }
   }, []);
 

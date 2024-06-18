@@ -5,17 +5,21 @@ import Ellipse24 from "../assets/images/Ellipse24.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 
 const Footer = ({ scrollToContact }) => {
   const handleButtonClick = () => {
     const isHomepage = window.location.pathname === "/";
-    
+
     if (isHomepage) {
       scrollToContact();
     } else {
+      // Set a flag in local storage
+      localStorage.setItem("scrollToContact", "true");
       window.location.href = "/";
     }
   };
+  const location = useLocation();
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
