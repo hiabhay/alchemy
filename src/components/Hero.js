@@ -12,15 +12,14 @@ const Hero = () => {
     Aos.init({ duration: 1000 });
 
     // Dynamically load the Clutch widget script
-    const script = document.createElement("script");
-    script.src = "https://widget.clutch.co/static/js/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
+    // const script = document.createElement("script");
+    // script.src = "https://widget.clutch.co/static/js/widget.js";
+    // script.async = true;
+    // document.body.appendChild(script);
 
-    return () => {
-      // Clean up the script when the component unmounts
-      document.body.removeChild(script);
-    };
+    // return () => {
+    //   document.body.removeChild(script);
+    // };
   }, []);
 
   return (
@@ -99,7 +98,7 @@ const Hero = () => {
           <HeroCarousel />
         </div>
       </div>
-      <div
+      {/* <div
           className="clutch-widget ml-16 -mt-6 sm:hidden"
           data-url="https://widget.clutch.co"
           data-widget-type="14"
@@ -108,7 +107,7 @@ const Hero = () => {
           // data-expandifr="true"
           data-scale="50"
           data-clutchcompany-id="2354015"
-        ></div>
+        ></div> */}
     </Section>
   );
 };

@@ -50,18 +50,15 @@ const Clients = () => {
         <img className="w-[90px] h-[28px] mt-4 mr-6" src={afleet} data-aos="zoom-in"></img>
         </div>
         <div className="flex justify-between mt-[10%]">
-        <img className="w-[70px] h-[35px] mt-4 ml-6" src={Maskgroup} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[24px] mt-5 " src={Notch} data-aos="zoom-in"></img>
-        <img className="w-[40px] h-[24px] mt-5 mr-6" src={LIT} data-aos="zoom-in"></img>
+        <img className="w-[70px] h-[35px] mt-4 ml-4" src={Maskgroup} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[24px] mt-5" src={Notch} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[28px] mt-5 mr-6" src={turfImg} data-aos="zoom-in"></img>
         </div>
         
-        <div className="flex mt-[10%] ml-[13%]">
-        <img className="w-[130px] h-[28px] mt-6 mr-4" src={meetuplive} data-aos="zoom-in"></img>
-        <img className="w-[110px] h-[32px] mt-5 mr-[2%] ml-[2%]" src={Petitfee} data-aos="zoom-in"></img>
-        </div>
-        <div className="flex mt-[10%] ml-[17%] mr-6">
-        <img className="w-[100px] h-[18px] mt-6 mr-6" src={auraAi} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[28px] mt-5 ml-2" src={turfImg} data-aos="zoom-in"></img>
+        <div className="flex mt-[10%] justify-between">
+        <img className="w-[100px] h-[28px] mt-5 ml-4" src={meetuplive} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[28px] mt-5" src={Petitfee} data-aos="zoom-in"></img>
+        <img className="w-[90px] h-[15px] mt-7 mr-6" src={auraAi} data-aos="zoom-in"></img>
         </div>
         </div>
       </div>
