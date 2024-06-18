@@ -79,8 +79,8 @@ const Work = () => {
 
               <div className="font-bold text-lg mt-4 sm:ml-6">Turf</div>
               <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
-              First of it’s kind to support gamers community to enhance
-              engagement, attain global recognition and Incentives
+                First of it’s kind to support gamers community to enhance
+                engagement, attain global recognition and Incentives
               </div>
             </div>
           </div>
@@ -103,8 +103,8 @@ const Work = () => {
 
               <div className="font-bold text-lg mt-4 sm:ml-6">Notch</div>
               <div className="font-semibold text-gray-700 text-lg mt-2 sm:w-auto sm:ml-6 sm:mr-6 text-justify">
-                A leading brand of fastners & nails. Located in the steel belt
-                of India, making it convenient to access finest quality of steel
+                Earn rewards for hitting gym milestones! Stay motivated, reach
+                your goals with the Notch app.
               </div>
             </div>
           </div>
@@ -124,8 +124,8 @@ const Work = () => {
 
               <div className="font-bold text-lg mt-4 sm:ml-6">Instaraise</div>
               <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
-                A leading brand of fastners & nails. Located in the steel belt
-                of India, making it convenient to access finest quality of steel
+                Simplifying voice memos and note-taking on iOS, blending robust
+                recording with smart summarization for seamless organization.
               </div>
             </div>
             <div
