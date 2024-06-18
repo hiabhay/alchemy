@@ -24,10 +24,10 @@ const StaticTests = () => {
           Highly recommended.
         </div>
         <div className="flex relative top-[17%] pl-6">
-          <img src={Jay} className="w-[50px] h-auto"></img>
+          <img src={Aditya} className="w-[50px] h-auto"></img>
           <div>
-            <div className="font-serif text-xl pl-4">Jay Gandhi</div>
-            <div className="pl-4 text-sm">CTO Notch</div>
+            <div className="font-serif text-xl pl-4">Adita Gautam</div>
+            <div className="pl-4 text-sm">Co-Founder Turf</div>
           </div>
         </div>
       </div>
@@ -60,15 +60,15 @@ const StaticTests = () => {
           className="w-[30px] h-auto relative top-[8%] left-[6.5%]"
         ></img>
         <div className="text-black w-auto text-sm font-semibold relative top-[10%] text-justify left-[6%] mr-14">
-          Choosing Alchemy was the best decision for our website! Their
-          creativity and expertise turned our vision into a stunning reality.
-          Highly recommend!
+          Working with Alchemy was a pleasure. Their stunning graphics
+          transformed our social media, perfectly capturing Clarity, our
+          drinking water brand.
         </div>
         <div className="flex relative top-[27%] pl-6">
           <img src={Shahil} className="w-[50px] h-[50px] rounded-full"></img>
           <div>
-            <div className="font-serif text-xl pl-4">Yashveer Talan</div>
-            <div className="pl-4 text-sm">CEO Krishi Tokri</div>
+            <div className="font-serif text-xl pl-4">Anuj Chauhan</div>
+            <div className="pl-4 text-sm">Clarity</div>
           </div>
         </div>
       </div>

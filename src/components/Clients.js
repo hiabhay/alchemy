@@ -33,34 +33,35 @@ const Clients = () => {
         <img className="w-[100px] h-[32px] mt-4 mr-20" src={Beyondorganics} data-aos="zoom-in"></img>
         <img className="w-[100px] h-[32px] mt-4 mr-20" src={instaraise} data-aos="zoom-in"></img>
         </div>
-        <div className="flex pl-[15%] pt-20 sm:pl-0">
+        <div className="flex pl-[22.5%] pt-20 sm:pl-0">
         <img className="w-[100px] h-[28px] mt-6 mr-20" src={afleet} data-aos="zoom-in"></img>
         <img className="w-[100px] h-[28px] mt-6 mr-20" src={meetuplive} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[22px] mt-6 mr-20" src={auraAi} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[28px] mt-4 mr-20" src={Krishitokri} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[18px] mt-6 mr-20" src={auraAi} data-aos="zoom-in"></img>
+        {/* <img className="w-[100px] h-[28px] mt-4 mr-20" src={Krishitokri} data-aos="zoom-in"></img> */}
         <img className="w-[100px] h-[28px] mt-4 mr-20" src={turfImg} data-aos="zoom-in"></img>
         </div>
         </div>
         {/* For Phones */} 
-        <div className="hidden sm:block mt-[7%] w-auto -mb-[40%]">
-        <div className="flex">
-        <img className="w-[70px] h-[35px] mt-4 mr-[2%] ml-[3%]" src={Maskgroup} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[24px] mt-5 mr-[2%] ml-[2%]" src={Notch} data-aos="zoom-in"></img>
-        <img className="w-[110px] h-[32px] mt-4 mr-[2%] ml-[2%]" src={Petitfee} data-aos="zoom-in"></img>
-        <img className="w-[40px] h-[24px] mt-5" src={LIT} data-aos="zoom-in"></img>
+        
+        <div className="hidden sm:block mt-[7%] w-auto -mb-[40%] mr-2">
+        <div className="flex justify-between">
+        <img className="w-[100px] h-[30px] mt-4 ml-2" src={Beyondorganics} data-aos="zoom-in"></img>
+        <img className="w-[80px] h-[30px] mt-4" src={instaraise} data-aos="zoom-in"></img>
+        <img className="w-[90px] h-[28px] mt-4 mr-6" src={afleet} data-aos="zoom-in"></img>
         </div>
-        <div className="flex mt-[10%] ml-[5%]">
-        <img className="w-[110px] h-[35px] mt-4 mr-5" src={Beyondorganics} data-aos="zoom-in"></img>
-        <img className="w-[90px] h-[32px] mt-5 mr-5" src={instaraise} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[28px] mt-6" src={afleet} data-aos="zoom-in"></img>
+        <div className="flex justify-between mt-[10%]">
+        <img className="w-[70px] h-[35px] mt-4 ml-6" src={Maskgroup} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[24px] mt-5 " src={Notch} data-aos="zoom-in"></img>
+        <img className="w-[40px] h-[24px] mt-5 mr-6" src={LIT} data-aos="zoom-in"></img>
         </div>
+        
         <div className="flex mt-[10%] ml-[13%]">
         <img className="w-[130px] h-[28px] mt-6 mr-4" src={meetuplive} data-aos="zoom-in"></img>
-        <img className="w-[130px] h-[30px] mt-5" src={Krishitokri} data-aos="zoom-in"></img>
+        <img className="w-[110px] h-[32px] mt-5 mr-[2%] ml-[2%]" src={Petitfee} data-aos="zoom-in"></img>
         </div>
-        <div className="flex mt-[10%] ml-[17%]">
-        <img className="w-[100px] h-[18px] mt-6 mr-4" src={auraAi} data-aos="zoom-in"></img>
-        <img className="w-[100px] h-[28px] mt-5" src={turfImg} data-aos="zoom-in"></img>
+        <div className="flex mt-[10%] ml-[17%] mr-6">
+        <img className="w-[100px] h-[18px] mt-6 mr-6" src={auraAi} data-aos="zoom-in"></img>
+        <img className="w-[100px] h-[28px] mt-5 ml-2" src={turfImg} data-aos="zoom-in"></img>
         </div>
         </div>
       </div>

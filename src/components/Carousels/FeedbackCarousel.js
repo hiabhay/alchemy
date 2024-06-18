@@ -60,7 +60,7 @@ const FeedbackCarousel = () => {
       <CarouselProvider
         naturalSlideWidth={500}
         naturalSlideHeight={190}
-        totalSlides={4}
+        totalSlides={3}
         visibleSlides={2}
         orientation="vertical"
         isPlaying={true}
@@ -123,7 +123,7 @@ const FeedbackCarousel = () => {
               </div>
             </div>
           </Slide>
-          <Slide index={2}>
+          {/* <Slide index={2}>
             <div
               className="w-[480px] h-[185px] sm:w-[300px] rounded-xl m-4 ml-4 pb-4 sm:pl-0"
               style={{ boxShadow: "0px 0px 25px rgba(0, 0, 0, 0.2)" }}
@@ -151,8 +151,8 @@ const FeedbackCarousel = () => {
                 </div>
               </div>
             </div>
-          </Slide>
-          <Slide index={3}>
+          </Slide> */}
+          <Slide index={2}>
             <div
               className="w-[480px] h-[185px] rounded-xl m-4 ml-4 pb-4 sm:pl-0"
               style={{ boxShadow: "0px 0px 25px rgba(0, 0, 0, 0.2)" }}
@@ -166,7 +166,7 @@ const FeedbackCarousel = () => {
                   expectations. Highly recommend.
                 </div>
                 <div className="flex">
-                  <img src={Ellipse} className="max-w-full h-[40px] mt-2" />
+                  <img src={Shahil} className="max-w-full h-[40px] w-[40px] rounded-full mt-2" />
                   <div>
                     <div className="font-semibold font-serif pt-2 pl-3">
                       Anuj Chauhan

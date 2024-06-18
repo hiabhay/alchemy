@@ -79,8 +79,8 @@ const Work = () => {
 
               <div className="font-bold text-lg mt-4 sm:ml-6">Turf</div>
               <div className="font-semibold text-gray-700 text-lg mt-2 w-[440px] sm:w-auto sm:ml-6 sm:mr-6 text-justify">
-                A leading brand of fastners & nails. Located in the steel belt
-                of India, making it convenient to access finest quality of steel
+              First of it’s kind to support gamers community to enhance
+              engagement, attain global recognition and Incentives
               </div>
             </div>
           </div>

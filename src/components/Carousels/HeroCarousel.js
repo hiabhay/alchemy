@@ -4,6 +4,7 @@ import Shivani from "../../assets/images/Shivani.png";
 import rightArrowWhite from "../../assets/images/rightArrowWhite.png";
 import Ellipse from "../../assets/images/Ellipse.png";
 import Shahil from "../../assets/images/Shahil.jpg"
+import Shivam from "../../assets/images/Shivam.jpg";
 import {
   CarouselProvider,
   Slider,
@@ -66,7 +67,7 @@ const HeroCarousel = () => {
               ></img>
               <div className="pl-4">
                 <div className="font-bold">Shvani Poddar</div>
-                <div className="text-opacity-25">ceo Crystal Matfoa</div>
+                <div className="text-opacity-25">CEO Crystal Matfoa</div>
               </div>
             </div>
           </Slide>
@@ -96,9 +97,9 @@ const HeroCarousel = () => {
               reality. Highly recommend!
             </div>
             <div className="flex pt-2">
-              <img className="w-[50px] h-[50px] rounded-full" src={Shahil} alt="Ellipse"></img>
+              <img className="w-[50px] h-[50px] rounded-full" src={Shivam} alt="Ellipse"></img>
               <div className="pl-4">
-                <div className="font-bold">Shahil</div>
+                <div className="font-bold">Shivam</div>
                 <div className="text-opacity-25">Crystal Fasteners</div>
               </div>
             </div>
@@ -108,7 +109,7 @@ const HeroCarousel = () => {
             Alchemy transformed our social media with stunning graphics, capturing Clarity. Their creativity and professionalism exceeded our expectations. Highly recommend.
             </div>
             <div className="flex pt-2">
-              <img className="w-[50px] h-[50px] rounded-full" src={Ellipse} alt="Ellipse"></img>
+              <img className="w-[50px] h-[50px] rounded-full" src={Shahil} alt="Ellipse"></img>
               <div className="pl-4">
                 <div className="font-bold">Anuj Chauhan</div>
                 <div className="text-opacity-25">Clarity</div>
